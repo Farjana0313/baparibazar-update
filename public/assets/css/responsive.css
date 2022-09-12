@@ -1,0 +1,122 @@
+@media only screen and (min-width:1851px) {}
+
+@media only screen and (min-width:1601px) and (max-width: 1850px) {}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {}
+
+@media only screen and (min-width: 1367px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {}
+
+
+/* Medium Layout: 1200px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+    .topbar-area-wrapper .right-content {
+        margin-top: 15px;
+    }
+
+    .topbar-area-wrapper .right-content .search-form {
+        width: 100%;
+    }
+
+    .topbar-area-wrapper .right-content .search-form form input {
+        flex: 1;
+    }
+
+    .default-tab-button .nav-item .nav-link {
+        padding: 8px 22px;
+        font-size: 13px;
+    }
+}
+
+
+/* Tablet Layout wide: 768px. */
+
+@media only screen and (max-width: 767px) {
+    .topbar-area-wrapper .right-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .topbar-area-wrapper .right-content .search-form {
+        width: auto;
+    }
+
+    .topbar-area-wrapper .right-content form input {
+        width: 100%;
+    }
+
+    .topbar-area-wrapper .right-content .action-btn-main {
+        margin-left: 20px;
+    }
+
+    .sidenav {
+        z-index: 99;
+    }
+}
+
+
+/* medium tablet layout 599px */
+
+@media only screen and (max-width: 599px) {
+    .topbar-area-wrapper .right-content form input {
+        width: auto;
+    }
+
+    .topbar-area-wrapper .right-content {
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .topbar-area-wrapper .right-content .action-btn-main {
+        margin-left: 0;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .topbar-area-wrapper .right-content .search-form {
+        width: auto;
+        margin-right: 15px;
+    }
+}
+
+/* medium tablet layout 575px */
+
+@media only screen and (max-width: 575px) {}
+
+/* medium tablet layout 450px */
+
+@media only screen and (max-width: 450px) {}
+
+
+/* mobile tablet layout 414px */
+
+@media only screen and (max-width: 414px) {}
+
+
+/* mobile tablet layout 375px */
+
+@media only screen and (max-width: 375px) {}
+
+
+/* mobile tablet layout 360px */
+
+@media only screen and (max-width: 360px) {}
+
+/* mobile tablet layout 340px */
+
+@media only screen and (max-width: 340px) {}
+
+
+/* mobile tablet layout 330px */
+
+@media only screen and (max-width: 330px) {}

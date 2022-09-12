@@ -1,0 +1,316 @@
+/* topbar */
+ .topbar-area-wrapper {
+     padding-top: 35px;
+     padding-bottom: 30px;
+     .page-title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #262626;
+
+        .small {
+            font-size: 18px;
+            font-weight: 700;
+        }
+     }
+     .date-and-time {
+         font-size: 12px;
+         line-height: 12px;
+         font-weight: 400;
+         color: #828282;
+         .date {
+            text-transform: capitalize;
+            display: inline-block;
+         }
+         .time {
+            text-transform: uppercase;
+            display: inline-block;
+            margin-left: 15px;
+         }
+     }
+
+     .right-content {
+        display: flex;
+        justify-content: flex-end;
+
+        form {
+            display: flex;
+            border: 1px solid #dfdddd;
+            height: 45px;
+            border-radius: 5px;
+
+            input {
+                border: none;
+                border-radius: 0;
+                background-color: transparent;
+                margin-bottom: 0;
+                width: 300px;
+
+                &::placeholder {
+                    color: #BDBDBD;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    background-color: transparent;
+                }
+            }
+
+            button {
+                border: none;
+                height: 45px;
+                width: 50px;
+                border-radius: 0;
+                background-color: transparent;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .action-btn-main {
+            margin-left: 35px;
+            display: flex;
+
+            .icon {
+                align-self: center;
+            }
+        }
+    }
+
+    .all-item-overview-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .single-overview-item {
+            margin-top: 35px;
+            padding: 10px 25px 12px 19px;
+            display: flex;
+            border-radius: 12px;
+            box-shadow: 0px 1px 5px 0px #dddddd;
+            width: 300px;
+            height: 110px;
+            align-items: center;
+
+            .icon-box {
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 58px;
+                border-radius: 50%;
+                background-color: blueviolet;
+            }
+
+            .content {
+                padding-left: 10px;
+                .number {
+                    font-size: 36px;
+                    line-height: 36px;
+                    font-weight: 700;
+                    color: #262626;
+                    display: block;
+                }
+
+                .text {
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #4F4F4F;
+                    text-transform: capitalize;
+                }
+            }
+
+            &.categories {
+                .icon-box {
+                    background-color: #BB6BD9;
+                }
+            }
+
+            &.subcategories {
+                .icon-box {
+                    background-color: #56CCF2;
+                }
+            }
+
+            &.listed {
+                .icon-box {
+                    background-color: #6FCF97;
+                }
+            }
+
+            &.products {
+                .icon-box {
+                    background-color: #F2994A;
+                }
+            }
+        }
+    }
+
+    .sales-analytics-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .single-analytics-item {
+            margin-top: 35px;
+            padding: 10px 25px 12px 19px;
+            
+            border-radius: 12px;
+            box-shadow: 0px 1px 5px 0px #dddddd;
+            width: 300px;
+            min-height: 110px;
+            align-items: center;
+
+            .top-content {
+                display: flex;
+            }
+
+            .icon-box {
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 58px;
+                border-radius: 50%;
+                background-color: blueviolet;
+            }
+
+            .content {
+                padding-left: 10px;
+                align-self: center;
+                .number {
+                    font-size: 20px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    color: #828282;
+                    display: block;
+                }
+
+                .text {
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #828282;
+                    text-transform: capitalize;
+                }
+            }
+
+            &.due {
+                .icon-box {
+                    background-color: #FFECC5;
+                }
+            }
+
+            &.receipts {
+                .icon-box {
+                    background-color: #D1FFE4;
+                }
+            }
+
+            &.expense {
+                .icon-box {
+                    background-color: #D1F4FF;
+                }
+            }
+
+            &.shop-onboard {
+                .icon-box {
+                    background-color: #EBD6FF;
+                }
+            }
+
+            .bottom-content {
+                .arrow-box {
+                    .total-text {
+                        display: inline-block;
+                        .arrow-sign {
+                            width: 12px;
+                            height: 12px;
+                            position: relative;
+                            display: inline-block;
+                            .arrow-up, .arrow-dow {
+                                position: absolute;
+                                left: 0;
+                                top: -7px;
+
+                            }
+                        }
+                        .text {
+                            display: inline-block;
+                            padding-left: 7px;
+                            .number {
+                                display: inline-block;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    font-size: 12px;
+                    color: #828282;
+                }
+            }
+
+            &.up {
+                .bottom-content {
+                    .arrow-box {
+                        .total-text {
+                            .arrow-sign {
+                                .arrow-up {
+                                    opacity: 0;
+                                }
+                                .arrow-dow {
+                                    
+                                }
+                            }
+                            .text {
+                                .number {
+                                    color: #27AE60;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.down {
+                .bottom-content {
+                    .arrow-box {
+                        .total-text {
+                            .arrow-sign {
+                                .arrow-up {
+                                    
+                                }
+                                .arrow-dow {
+                                    opacity: 0;
+                                }
+                            }
+                            .text {
+                                .number {
+                                    color: #EB5757;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .single-progressbar {
+            margin: 12px 0 10px;
+            .progressbar {
+                border-radius: 8px !important;
+                overflow: hidden !important;
+                .proggress {
+                    height: 5px !important;
+                    border-radius: 8px !important;
+                }
+            }
+
+
+            .percentCount {
+                display: none;
+            }
+        }
+    }
+ }

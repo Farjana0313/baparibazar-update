@@ -1,0 +1,64 @@
+/*-----------------------------
+    Accordion Item
+-----------------------------*/
+
+.accordion {
+    .card {
+        overflow: visible;
+        margin-bottom: 30px;
+        border: none;
+        background-color: #F2F3F5;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            position: relative;
+            padding: 0;
+
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 18px;
+                text-transform: initial;
+                color: var(--heading-color);
+                font-weight: 500;
+                padding: 16px 20px 20px 20px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                i.la-angle-up {
+                    display: none;
+                }
+
+                i {
+                    font-size: 15px;
+                    color: #333333;
+                    position: absolute;
+                    right: 10px;
+                    top: 18px;
+                }
+
+                &[aria-expanded="true"] {
+                    i.la-angle-up {
+                        display: block;
+                    }
+
+                    i.la-angle-down {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding-top: 0px;
+            margin-top: -6px;
+        }
+    }
+}
