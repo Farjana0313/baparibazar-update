@@ -17,7 +17,8 @@
                                     <input type="password" class="form-control" id="exampleInputPassword1"
                                         placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn login-btn">Log in</button>
+                                
+                                <router-link to="/order"><button type="submit" class="btn login-btn">Log in</button></router-link>
                             </form>
                         </div>
                     </div>

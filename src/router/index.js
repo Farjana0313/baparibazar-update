@@ -8,6 +8,11 @@ const routes = [
     component: LoginView
   },
   {
+    path:'/new-order',
+    name:'New Order',
+    component: () => import('../views/NewOrderView.vue')
+  },
+  {
     path: '/contact-list',
     name: 'Contact List',
     // route level code-splitting
@@ -19,11 +24,6 @@ const routes = [
     path:'/discount',
     name:'Discount',
     component:()=>import('../views/DiscountView.vue')
-  },
-  {
-    path:'/new-order',
-    name:'New Order',
-    component: () => import('../views/NewOrderView.vue')
   },
   {
     path:'/order',
@@ -69,6 +69,11 @@ const routes = [
     path:'/user-list',
     name:'User List',
     component: () => import('../views/UserListView.vue')
+  },
+  {
+    path:'/role',
+    name:'Role',
+    component: () => import('../views/role/RoleView')
   },
 ]
 
