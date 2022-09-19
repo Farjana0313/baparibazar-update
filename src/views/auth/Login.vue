@@ -18,7 +18,7 @@
                                         placeholder="Password">
                                 </div>
                                 
-                                <router-link to="/order"><button type="submit" class="btn login-btn">Log in</button></router-link>
+                                <router-link to="/new-order"><button type="submit" class="btn login-btn">Log in</button></router-link>
                             </form>
                         </div>
                     </div>

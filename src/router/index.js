@@ -1,16 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginView from '@/views/auth/LoginView.vue'
+import Login from '@/views/auth/Login.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: LoginView
+    component: Login
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: ()=>import('../views/dashboard/Dashboard.vue')
   },
   {
     path:'/new-order',
     name:'New Order',
-    component: () => import('../views/NewOrderView.vue')
+    component: () => import('../views/NewOrder.vue')
   },
   {
     path: '/contact-list',
@@ -18,62 +23,62 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ContactListView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/ContactList.vue')
   },
   {
     path:'/discount',
     name:'Discount',
-    component:()=>import('../views/DiscountView.vue')
+    component:()=>import('../views/Discount.vue')
   },
   {
     path:'/order',
     name:'Order',
-    component: () => import('../views/OrderView.vue')
+    component: () => import('../views/Order.vue')
   },
   {
     path:'/product-list',
     name:'Product List',
-    component: () => import('../views/ProductListView.vue')
+    component: () => import('../views/ProductList.vue')
   },
   {
     path:'/product-manager',
     name:'Product Manager',
-    component: () => import('../views/ProductManagerView.vue')
+    component: () => import('../views/ProductManager.vue')
   },
   {
     path:'/product-overview',
     name:'Product Overview',
-    component: () => import('../views/ProductOverviewView.vue')
+    component: () => import('../views/ProductOverview.vue')
   },
   {
     path:'/product-price-update-history',
     name:'Product Price Update History',
-    component: () => import('../views/ProductPriceUpdateHistoryView.vue')
+    component: () => import('../views/ProductPriceUpdateHistory.vue')
   },
   {
     path:'/sales-analytics',
     name:'Sales Analytics',
-    component: () => import('../views/SalesAnalyticsView.vue')
+    component: () => import('../views/SalesAnalytics.vue')
   },
   {
     path:'/sales-list',
     name:'Sales List',
-    component: () => import('../views/SalesListView.vue')
+    component: () => import('../views/SalesList.vue')
   },
   {
     path:'/service-charges',
     name:'Service Charges',
-    component: () => import('../views/ServiceChargesView.vue')
+    component: () => import('../views/ServiceCharges.vue')
   },
   {
     path:'/user-list',
     name:'User List',
-    component: () => import('../views/UserListView.vue')
+    component: () => import('../views/UserList.vue')
   },
   {
     path:'/role',
     name:'Role',
-    component: () => import('../views/role/RoleView')
+    component: () => import('../views/role/Role')
   },
 ]
 
