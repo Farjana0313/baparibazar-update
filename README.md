@@ -1,4 +1,4 @@
-# baparibazar_v1
+# baparibazar_v2
 
 ## Project setup
 ```
