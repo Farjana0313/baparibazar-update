@@ -422,7 +422,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
+  name: "ServiceChanesCom"
 }
 </script>
+
+<style scoped>
+
+</style>

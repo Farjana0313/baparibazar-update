@@ -1,4 +1,4 @@
-# baparibazar-update
+# baparibazar_v1
 
 ## Project setup
 ```

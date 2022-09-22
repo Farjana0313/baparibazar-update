@@ -327,7 +327,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
+  name: "UserListCom"
 }
 </script>
+
+<style scoped>
+
+</style>

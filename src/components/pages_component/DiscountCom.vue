@@ -1,14 +1,32 @@
 <template>
-  <div class="product-area-wrapper">
+  <div class="settings-area-wrapper">
 
     <div class="row">
       <div class="col-lg-12">
         <!-- topbar top content start -->
         <div class="tab-top-content">
           <div class="left-content">
-            <span class="title">List</span>
           </div>
           <div class="right-content">
+            <a href="#" class="download-invoice-btn top-bar-ringt-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.1599 6.29988L12.4899 0.899878C11.7599 0.799878 10.9399 0.749878 10.0399 0.749878C3.7499 0.749878 1.6499 3.06988 1.6499 9.99988C1.6499 16.9399 3.7499 19.2499 10.0399 19.2499C16.3399 19.2499 18.4399 16.9399 18.4399 9.99988C18.4399 8.57988 18.3499 7.34988 18.1599 6.29988Z"
+                      fill="#E0E0E0" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                      fill="#E0E0E0" />
+                <path d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                      stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.6604 14.0172V7.9762" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622"
+                      fill="#E0E0E0" />
+                <path d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622" stroke="#828282" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
             <a href="#" class="filter-filter-btn top-bar-ringt-btn">
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -24,8 +42,8 @@
 
     <div class="row">
       <div class="col-lg-12">
-        <!-- product overview content start -->
-        <div class="table-area-wrapper product-overview-table-content">
+        <!-- tab content area start -->
+        <div class="table-area-wrapper settings-table-content">
           <table>
             <thead>
             <tr>
@@ -39,19 +57,19 @@
                 <span class="no-only">#</span>
               </th>
               <th class="name">
-                Categories
+                Discount Code
               </th>
-              <th class="sub-category">
-                Subcatory
-              </th>
-              <th class="product-brand">
-                Product Name
-              </th>
-              <th class="weight">
-                weight
+              <th class="amount-percentage">
+                Amount/Percentage
               </th>
               <th class="date-and-time">
-                Last update
+                Active Date
+              </th>
+              <th class="date-and-time">
+                Deactive Date
+              </th>
+              <th class="status">
+                Status
               </th>
               <th class="action">
                 Action
@@ -60,7 +78,7 @@
             </thead>
 
             <tbody>
-            <tr class="sub-categories-item">
+            <tr class="active-item">
               <td class="sl-no">
                 <form action="/action_page.php">
                   <input type="checkbox" id="" name="" value="">
@@ -68,29 +86,24 @@
                 <span class="no-only">১</span>
               </td>
               <td class="name">
-                        <span class="total-wrap">
-                          <span class="img-box">
-                            <img src="assets/images/product-category/chal/01.png" alt="">
-                          </span>
-                          <span class="product-name">চাল</span>
-                        </span>
+                <span class="name-code">FO1101</span>
               </td>
-              <td class="sub-category">
-                <span class="sub-category-name">নাজিরশাইল</span>
-              </td>
-              <td class="product-brand">
-                <span class="product-brand-name">মোজ্জামেল</span>
-              </td>
-              <td class="weight">
-                <span class="weight-only">২৫</span>
+              <td class="amount-percentage">
+                <span class="percent-only">1%</span>
               </td>
               <td class="date-and-time">
-                <span class="last-update">১৮/১০/২০২১</span>
+                <span class="active-date">১৮/১০/২০২১</span>
+              </td>
+              <td class="date-and-time">
+                <span class="dactive-date">১৮/১০/২০২১</span>
+              </td>
+              <td class="status">
+                <span class="status-only">active</span>
               </td>
               <td class="action">
                         <span class="checkboxes-and-radios">
-                          <input type="checkbox" name="checkbox-cats[]" id="product-over-chal-1" value="1" checked="">
-                          <label for="product-over-chal-1"></label>
+                          <input type="checkbox" name="checkbox-cats[]" id="dis-1" value="1" checked="">
+                          <label for="dis-1"></label>
                         </span>
                 <span class="single-action-item">
                           <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -170,7 +183,7 @@
                         </span>
               </td>
             </tr>
-            <tr class="sub-categories-item">
+            <tr class="inactive-item">
               <td class="sl-no">
                 <form action="/action_page.php">
                   <input type="checkbox" id="" name="" value="">
@@ -178,29 +191,24 @@
                 <span class="no-only">১</span>
               </td>
               <td class="name">
-                        <span class="total-wrap">
-                          <span class="img-box">
-                            <img src="assets/images/product-category/chal/01.png" alt="">
-                          </span>
-                          <span class="product-name">ডাল</span>
-                        </span>
+                <span class="name-code">FO1101</span>
               </td>
-              <td class="sub-category">
-                <span class="sub-category-name">নাজিরশাইল</span>
-              </td>
-              <td class="product-brand">
-                <span class="product-brand-name">মোজ্জামেল</span>
-              </td>
-              <td class="weight">
-                <span class="weight-only">২৫</span>
+              <td class="amount-percentage">
+                <span class="percent-only">1%</span>
               </td>
               <td class="date-and-time">
-                <span class="last-update">১৮/১০/২০২১</span>
+                <span class="active-date">১৮/১০/২০২১</span>
+              </td>
+              <td class="date-and-time">
+                <span class="dactive-date">১৮/১০/২০২১</span>
+              </td>
+              <td class="status">
+                <span class="status-only">inactive</span>
               </td>
               <td class="action">
                         <span class="checkboxes-and-radios">
-                          <input type="checkbox" name="checkbox-cats[]" id="product-over-dal-1" value="1" checked="">
-                          <label for="product-over-dal-1"></label>
+                          <input type="checkbox" name="checkbox-cats[]" id="dis-2" value="1" checked="">
+                          <label for="dis-2"></label>
                         </span>
                 <span class="single-action-item">
                           <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -304,13 +312,18 @@
             </div>
           </div>
         </div>
-        <!-- product overview content end -->
+        <!-- tab content area end -->
       </div>
     </div>
   </div>
 </template>
-<script>
 
+<script>
 export default {
+  name: "DiscountCom"
 }
 </script>
+
+<style scoped>
+
+</style>

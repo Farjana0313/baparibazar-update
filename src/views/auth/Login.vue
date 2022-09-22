@@ -10,15 +10,15 @@
                         <div class="login-form-wrap">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                    <input type="text" v-model="email" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" placeholder="User ID">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Password">
+                                    <input type="password" v-model="password" class="form-control"
+                                        id="exampleInputPassword1" placeholder="Password">
                                 </div>
-                                
-                                <router-link to="/new-order"><button type="submit" class="btn login-btn">Log in</button></router-link>
+
+                                <button class="btn login-btn" @click.prevent="logIn">Log in</button>
                             </form>
                         </div>
                     </div>
@@ -32,3 +32,37 @@
         </div>
     </div>
 </template>
+<script>
+    import {
+        HTTP
+    } from "../http-common";
+    export default {
+        name: "Login",
+        data() {
+            return {
+                email: "",
+                password: "",
+            }
+        },
+        methods: {
+            async logIn() {
+                // console.warn("logIn", this.email, this.password);
+                let result = await HTTP.get(`users?email=${this.email}&password=${this.password}`);
+
+                console.warn(result);
+                if (result.status == 200 && result.data.length>0) {
+                    localStorage.setItem('user_info',JSON.stringify(result.data[0]))
+                    this.$router.push({name:"Dashboard"})
+                }
+            }
+        },
+        mounted() {
+            let user = localStorage.getItem('user_info');
+            if (user) {
+                this.$router.push({
+                    name: "Dashboard"
+                });
+            }
+        }
+    }
+</script>

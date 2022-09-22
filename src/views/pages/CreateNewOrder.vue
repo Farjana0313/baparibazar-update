@@ -1,11 +1,13 @@
 <template>
-  <router-view/>
+
 </template>
+
 <script>
 export default {
-    name: "App",
+  name: "CreateNewOrder"
 }
 </script>
-<style>
+
+<style scoped>
 
 </style>

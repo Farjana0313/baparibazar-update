@@ -1,32 +1,14 @@
 <template>
-  <div class="settings-area-wrapper">
+  <div class="product-area-wrapper">
 
     <div class="row">
       <div class="col-lg-12">
         <!-- topbar top content start -->
         <div class="tab-top-content">
           <div class="left-content">
+            <span class="title">List</span>
           </div>
           <div class="right-content">
-            <a href="#" class="download-invoice-btn top-bar-ringt-btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M18.1599 6.29988L12.4899 0.899878C11.7599 0.799878 10.9399 0.749878 10.0399 0.749878C3.7499 0.749878 1.6499 3.06988 1.6499 9.99988C1.6499 16.9399 3.7499 19.2499 10.0399 19.2499C16.3399 19.2499 18.4399 16.9399 18.4399 9.99988C18.4399 8.57988 18.3499 7.34988 18.1599 6.29988Z"
-                      fill="#E0E0E0" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
-                      fill="#E0E0E0" />
-                <path d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
-                      stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M9.6604 14.0172V7.9762" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622"
-                      fill="#E0E0E0" />
-                <path d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622" stroke="#828282" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
             <a href="#" class="filter-filter-btn top-bar-ringt-btn">
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -42,8 +24,8 @@
 
     <div class="row">
       <div class="col-lg-12">
-        <!-- tab content area start -->
-        <div class="table-area-wrapper settings-table-content">
+        <!-- product overview content start -->
+        <div class="table-area-wrapper product-overview-table-content">
           <table>
             <thead>
             <tr>
@@ -57,16 +39,19 @@
                 <span class="no-only">#</span>
               </th>
               <th class="name">
-                Name
+                Categories
               </th>
-              <th class="user-id">
-                User Id
+              <th class="sub-category">
+                Subcatory
               </th>
-              <th class="password">
-                Password
+              <th class="product-brand">
+                Product Name
               </th>
-              <th class="role">
-                Role
+              <th class="weight">
+                weight
+              </th>
+              <th class="date-and-time">
+                Last update
               </th>
               <th class="action">
                 Action
@@ -75,7 +60,7 @@
             </thead>
 
             <tbody>
-            <tr class="single-uler-list-item">
+            <tr class="sub-categories-item">
               <td class="sl-no">
                 <form action="/action_page.php">
                   <input type="checkbox" id="" name="" value="">
@@ -83,54 +68,29 @@
                 <span class="no-only">১</span>
               </td>
               <td class="name">
-                        <span class="employ-name">
-                          Sabbir Rahman
-                        </span>
-              </td>
-              <td class="user-id">
-                Sabbir
-              </td>
-              <td class="password">
-                        <span class="password-wrap">
-                          <span class="password-only">***********</span>
-                          <span class="icon">
-                            <svg width="14" height="13" viewBox="0 0 12 10" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.58192 5.02607C7.58192 5.89907 6.87392 6.60707 6.00092 6.60707C5.12792 6.60707 4.41992 5.89907 4.41992 5.02607C4.41992 4.15257 5.12792 3.44507 6.00092 3.44507C6.87392 3.44507 7.58192 4.15257 7.58192 5.02607Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1.375 5.026C1.375 6.666 3.446 8.677 6.001 8.677C8.5555 8.677 10.627 6.6675 10.627 5.026C10.627 3.3845 8.5555 1.375 6.001 1.375C3.446 1.375 1.375 3.386 1.375 5.026Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <span class="total-wrap">
+                          <span class="img-box">
+                            <img src="assets/images/product-category/chal/01.png" alt="">
                           </span>
+                          <span class="product-name">চাল</span>
                         </span>
               </td>
-              <td class="role">
-                        <span class="dropdown">
-                          <span class="icon">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1.375 6C1.375 9.4685 2.5315 10.625 6 10.625C9.4685 10.625 10.625 9.4685 10.625 6C10.625 2.5315 9.4685 1.375 6 1.375C2.5315 1.375 1.375 2.5315 1.375 6Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                              <path
-                                  d="M4.26367 5.27905C4.26367 5.27905 5.45967 7.02205 5.99967 7.02205C6.53967 7.02205 7.73467 5.27905 7.73467 5.27905"
-                                  stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                          <select>
-                            <option value="volvo">Sales Manager</option>
-                            <option value="saab">Sales Manager 2</option>
-                            <option value="opel">Sales Manager 3</option>
-                            <option value="audi">Sales Manager 4</option>
-                          </select>
-                        </span>
+              <td class="sub-category">
+                <span class="sub-category-name">নাজিরশাইল</span>
+              </td>
+              <td class="product-brand">
+                <span class="product-brand-name">মোজ্জামেল</span>
+              </td>
+              <td class="weight">
+                <span class="weight-only">২৫</span>
+              </td>
+              <td class="date-and-time">
+                <span class="last-update">১৮/১০/২০২১</span>
               </td>
               <td class="action">
                         <span class="checkboxes-and-radios">
-                          <input type="checkbox" name="checkbox-cats[]" id="role-1" value="1" checked="">
-                          <label for="role-1"></label>
+                          <input type="checkbox" name="checkbox-cats[]" id="product-over-chal-1" value="1" checked="">
+                          <label for="product-over-chal-1"></label>
                         </span>
                 <span class="single-action-item">
                           <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -210,7 +170,7 @@
                         </span>
               </td>
             </tr>
-            <tr class="single-uler-list-item">
+            <tr class="sub-categories-item">
               <td class="sl-no">
                 <form action="/action_page.php">
                   <input type="checkbox" id="" name="" value="">
@@ -218,54 +178,29 @@
                 <span class="no-only">১</span>
               </td>
               <td class="name">
-                        <span class="employ-name">
-                          Sabbir Rahman
-                        </span>
-              </td>
-              <td class="user-id">
-                Sabbir
-              </td>
-              <td class="password">
-                        <span class="password-wrap">
-                          <span class="password-only">***********</span>
-                          <span class="icon">
-                            <svg width="14" height="13" viewBox="0 0 12 10" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.58192 5.02607C7.58192 5.89907 6.87392 6.60707 6.00092 6.60707C5.12792 6.60707 4.41992 5.89907 4.41992 5.02607C4.41992 4.15257 5.12792 3.44507 6.00092 3.44507C6.87392 3.44507 7.58192 4.15257 7.58192 5.02607Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1.375 5.026C1.375 6.666 3.446 8.677 6.001 8.677C8.5555 8.677 10.627 6.6675 10.627 5.026C10.627 3.3845 8.5555 1.375 6.001 1.375C3.446 1.375 1.375 3.386 1.375 5.026Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <span class="total-wrap">
+                          <span class="img-box">
+                            <img src="assets/images/product-category/chal/01.png" alt="">
                           </span>
+                          <span class="product-name">ডাল</span>
                         </span>
               </td>
-              <td class="role">
-                        <span class="dropdown">
-                          <span class="icon">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1.375 6C1.375 9.4685 2.5315 10.625 6 10.625C9.4685 10.625 10.625 9.4685 10.625 6C10.625 2.5315 9.4685 1.375 6 1.375C2.5315 1.375 1.375 2.5315 1.375 6Z"
-                                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                              <path
-                                  d="M4.26367 5.27905C4.26367 5.27905 5.45967 7.02205 5.99967 7.02205C6.53967 7.02205 7.73467 5.27905 7.73467 5.27905"
-                                  stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                          <select>
-                            <option value="volvo">Sales Manager</option>
-                            <option value="saab">Sales Manager 2</option>
-                            <option value="opel">Sales Manager 3</option>
-                            <option value="audi">Sales Manager 4</option>
-                          </select>
-                        </span>
+              <td class="sub-category">
+                <span class="sub-category-name">নাজিরশাইল</span>
+              </td>
+              <td class="product-brand">
+                <span class="product-brand-name">মোজ্জামেল</span>
+              </td>
+              <td class="weight">
+                <span class="weight-only">২৫</span>
+              </td>
+              <td class="date-and-time">
+                <span class="last-update">১৮/১০/২০২১</span>
               </td>
               <td class="action">
                         <span class="checkboxes-and-radios">
-                          <input type="checkbox" name="checkbox-cats[]" id="role-2" value="1" checked="">
-                          <label for="role-2"></label>
+                          <input type="checkbox" name="checkbox-cats[]" id="product-over-dal-1" value="1" checked="">
+                          <label for="product-over-dal-1"></label>
                         </span>
                 <span class="single-action-item">
                           <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -369,12 +304,18 @@
             </div>
           </div>
         </div>
-        <!-- tab content area end -->
+        <!-- product overview content end -->
       </div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
+  name: "ProductOverviewCom"
 }
 </script>
+
+<style scoped>
+
+</style>

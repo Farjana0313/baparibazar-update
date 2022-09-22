@@ -1,48 +1,56 @@
 <template>
-  <div class="topbar-area-wrapper">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="left-content">
-          <h3 class="page-title">order</h3>
-          <div class="date-and-time">
-            <span class="date">Jun 21, 2021</span>
-            <span class="time">5:32 PM</span>
+  <div class="container-scroller">
+    <!-- sidebar area start -->
+    <Sidebar/>
+    <!-- sidebar area end -->
+
+    <!-- main body area start -->
+    <div class="container-fluid main-body">
+      <!-- top bar area start -->
+      <div class="topbar-area-wrapper">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="left-content">
+              <h3 class="page-title">sales</h3>
+              <div class="date-and-time">
+                <span class="date">Jun 21, 2021</span>
+                <span class="time">5:32 PM</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="right-content">
-          <div class="search-form">
-            <form>
-              <input type="text" class="form-control" placeholder="Search here">
-              <button type="submit" class="form-btn-icon">
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M6.82592 0.333344C10.4059 0.333344 13.3179 3.24534 13.3179 6.82534C13.3179 8.51437 12.6697 10.0549 11.609 11.211L13.6962 13.2938C13.8915 13.4891 13.8922 13.8051 13.6969 14.0005C13.5995 14.0991 13.4709 14.1478 13.3429 14.1478C13.2155 14.1478 13.0875 14.0991 12.9895 14.0018L10.8772 11.8953C9.76597 12.7852 8.35704 13.318 6.82592 13.318C3.24592 13.318 0.333252 10.4053 0.333252 6.82534C0.333252 3.24534 3.24592 0.333344 6.82592 0.333344ZM6.82592 1.33334C3.79725 1.33334 1.33325 3.79668 1.33325 6.82534C1.33325 9.85401 3.79725 12.318 6.82592 12.318C9.85392 12.318 12.3179 9.85401 12.3179 6.82534C12.3179 3.79668 9.85392 1.33334 6.82592 1.33334Z"
-                        fill="#BDBDBD" />
-                </svg>
-              </button>
-            </form>
-          </div>
-          <div class="action-btn-main">
-            <a href="#" class="icon" data-toggle="dropdown" aria-expanded="false">
-              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M1.21655 19.0676C1.21655 5.68036 5.68024 1.21667 19.0674 1.21667C32.4546 1.21667 36.9183 5.68036 36.9183 19.0676C36.9183 32.4547 32.4546 36.9184 19.0674 36.9184C5.68024 36.9184 1.21655 32.4547 1.21655 19.0676Z"
-                      fill="#262626" stroke="#262626" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M19.0674 12.5148V25.6202" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                <path d="M25.6268 19.0675H12.5078" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-              </svg>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right control" style="">
-              <div class="modal-control-01">
-                <div class="modal-content">
-                  <!-- modal content start -->
-                  <div class="mini-modal-style-01">
-                    <ul class="list">
-                      <li class="list-item">
+          <div class="col-lg-8">
+            <div class="right-content">
+              <div class="search-form">
+                <form>
+                  <input type="text" class="form-control" placeholder="Search here">
+                  <button type="submit" class="form-btn-icon">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.82592 0.333344C10.4059 0.333344 13.3179 3.24534 13.3179 6.82534C13.3179 8.51437 12.6697 10.0549 11.609 11.211L13.6962 13.2938C13.8915 13.4891 13.8922 13.8051 13.6969 14.0005C13.5995 14.0991 13.4709 14.1478 13.3429 14.1478C13.2155 14.1478 13.0875 14.0991 12.9895 14.0018L10.8772 11.8953C9.76597 12.7852 8.35704 13.318 6.82592 13.318C3.24592 13.318 0.333252 10.4053 0.333252 6.82534C0.333252 3.24534 3.24592 0.333344 6.82592 0.333344ZM6.82592 1.33334C3.79725 1.33334 1.33325 3.79668 1.33325 6.82534C1.33325 9.85401 3.79725 12.318 6.82592 12.318C9.85392 12.318 12.3179 9.85401 12.3179 6.82534C12.3179 3.79668 9.85392 1.33334 6.82592 1.33334Z"
+                            fill="#BDBDBD"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="action-btn-main">
+                <a href="#" class="icon" data-toggle="dropdown" aria-expanded="false">
+                  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.21655 19.0676C1.21655 5.68036 5.68024 1.21667 19.0674 1.21667C32.4546 1.21667 36.9183 5.68036 36.9183 19.0676C36.9183 32.4547 32.4546 36.9184 19.0674 36.9184C5.68024 36.9184 1.21655 32.4547 1.21655 19.0676Z"
+                          fill="#262626" stroke="#262626" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.0674 12.5148V25.6202" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                    <path d="M25.6268 19.0675H12.5078" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right control" style="">
+                  <div class="modal-control-01">
+                    <div class="modal-content">
+                      <!-- modal content start -->
+                      <div class="mini-modal-style-01">
+                        <ul class="list">
+                          <li class="list-item">
                             <span class="icon">
                               <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
@@ -51,11 +59,11 @@
                                     stroke="white" stroke-width="1.6"></path>
                               </svg>
                             </span>
-                        <a href="/new-order" class="text">
-                          Create Order
-                        </a>
-                      </li>
-                      <li class="list-item" onclick="addProdOnePopOpn()">
+                            <a href="creat-new-order.html" class="text">
+                              Create Order
+                            </a>
+                          </li>
+                          <li class="list-item" onclick="addProdOnePopOpn()">
                             <span class="icon">
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +72,11 @@
                                       fill="white"></path>
                               </svg>
                             </span>
-                        <span class="text">
+                            <span class="text">
                               Add Product
                             </span>
-                      </li>
-                      <li class="list-item" onclick="customerPopOpn()">
+                          </li>
+                          <li class="list-item" onclick="customerPopOpn()">
                             <span class="icon">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
@@ -81,11 +89,11 @@
                               </svg>
 
                             </span>
-                        <span class="text">
+                            <span class="text">
                               Add Shop
                             </span>
-                      </li>
-                      <li class="list-item" onclick="supplyPopOpn()">
+                          </li>
+                          <li class="list-item" onclick="supplyPopOpn()">
                             <span class="icon">
                               <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
@@ -94,11 +102,11 @@
                                       fill="white"></path>
                               </svg>
                             </span>
-                        <span class="text">
+                            <span class="text">
                               Add Supplier
                             </span>
-                      </li>
-                      <li class="list-item" onclick="discPopOpn()">
+                          </li>
+                          <li class="list-item" onclick="discPopOpn()">
                             <span class="icon">
                               <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
@@ -107,27 +115,54 @@
                                       fill="white"></path>
                               </svg>
                             </span>
-                        <span class="text">
+                            <span class="text">
                               Set Discount
                             </span>
-                      </li>
-                    </ul>
+                          </li>
+                        </ul>
 
+                      </div>
+                      <!-- modal content end -->
+                    </div>
                   </div>
-                  <!-- modal content end -->
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <sales-analytics-card></sales-analytics-card>
+          </div>
+        </div>
       </div>
+      <!-- top bar area end -->
+
+      <!-- main body content start -->
+      <div class="main-body-content-area-wrapper">
+        <sales-analytics-com></sales-analytics-com>
+      </div>
+      <!-- main body content end -->
+
+      <!-- all big popup wrapper start -->
+      <AllPopup/>
+      <!-- all big popup wrapper end -->
+
     </div>
+    <!-- main body area start -->
   </div>
 </template>
 
 <script>
+import Sidebar from "@/components/nav_top/Sidebar";
+import Topbar from "@/components/nav_top/Topbar";
+import AllPopup from "@/components/all_popup/AllPopup";
+import SalesAnalyticsCom from "@/components/pages_component/SalesAnalyticsCom";
+import SalesAnalyticsCard from "@/components/pages_component/SalesAnalyticsCard";
+
 export default {
-  name: "TobBar.vue"
+  name: "SalesAnalytics",
+  components: {SalesAnalyticsCard, SalesAnalyticsCom, AllPopup, Topbar, Sidebar}
 }
 </script>
 
