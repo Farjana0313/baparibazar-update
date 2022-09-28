@@ -1,10 +1,12 @@
 <template>
-
+<CreateNewOrderCom/>
 </template>
 
 <script>
+import CreateNewOrderCom from "../../components/pages_component/CreateNewOrderCom.vue";
 export default {
-  name: "CreateNewOrder"
+    name: "CreateNewOrder",
+    components: { CreateNewOrderCom }
 }
 </script>
 

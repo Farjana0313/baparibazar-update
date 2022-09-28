@@ -6415,7 +6415,7 @@ input[type=button].btn-block {
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
+  /* display: none; */
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -20778,7 +20778,7 @@ p {
 }
 
 .sidebar .nav .nav-item.active .menu-icon svg path {
-  fill: black;
+  fill: black!important;
 }
 
 .sidebar .nav .nav-item.nav-profile .nav-link {

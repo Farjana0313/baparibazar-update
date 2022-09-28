@@ -2,13 +2,7 @@
     <div class="topbar-area-wrapper">
         <div class="row">
             <div class="col-lg-4">
-                <div class="left-content">
-                    <h3 class="page-title">order</h3>
-                    <div class="date-and-time">
-                        <span class="date">Jun 21, 2021</span>
-                        <span class="time">5:32 PM</span>
-                    </div>
-                </div>
+                <page-title :title="title"></page-title>
             </div>
             <div class="col-lg-8">
                 <div class="right-content">
@@ -54,9 +48,9 @@
                                                             stroke="white" stroke-width="1.6"></path>
                                                     </svg>
                                                 </span>
-                                                <a href="creat-new-order.html" class="text">
+                                                <router-link to="/new_order" class="text">
                                                     Create Order
-                                                </a>
+                                                </router-link>
                                             </li>
                                             <li class="list-item" onclick="addProdOnePopOpn()">
                                                 <span class="icon">
@@ -127,3 +121,9 @@
         </div>
     </div>
 </template>
+<script>
+import PageTitle from "@/components/nav_top/top_title/PageTitle";
+export default {
+  components: {PageTitle}
+}
+</script>

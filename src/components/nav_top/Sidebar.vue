@@ -150,7 +150,7 @@
                             <img src="assets/images/user-pic/user-pic.png" alt="user-pic">
                         </div>
                         <div class="info-sec">
-                            <h5 class="name">foysal islam</h5>
+                            <h5 class="name">{{ name }}</h5>
                             <span class="post">support admin</span>
                         </div>
                     </div>
@@ -173,11 +173,21 @@
 <script>
 export default {
     name: 'Sidebar',
+    data() {
+        return{
+            name:''
+        }
+    },
     methods: {
         logout() {
             localStorage.clear();
             this.$router.push({name:"Login"})
         }
+    },
+    
+    mounted() {
+      let user = localStorage.getItem('user_info');
+      this.name = JSON.parse(user).name;
     }
 }
 </script>
