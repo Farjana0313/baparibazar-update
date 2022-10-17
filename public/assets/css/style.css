@@ -19488,7 +19488,7 @@ p {
   display: inline-block;
   border: 1px solid #262626;
   padding: 6px 23px;
-  color: #fff;
+  color: #fff !important;
   border-radius: 9px;
   text-transform: capitalize;
 }
