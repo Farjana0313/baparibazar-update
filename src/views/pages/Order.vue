@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <div class="container-scroller">
-      <!-- sidebar area start -->
-      <Sidebar />
-      <!-- sidebar area end -->
+    <div>
+        <div class="container-scroller">
+            <!-- sidebar area start -->
+            <Sidebar/>
+            <!-- sidebar area end -->
 
-      <!-- main body area start -->
-      <div class="container-fluid main-body">
-        <!-- top bar area start -->
-        <div class="topbar-area-wrapper">
+                <!-- main body area start -->
+                <div class="container-fluid main-body">
+                    <!-- top bar area start -->
+                    <div class="topbar-area-wrapper">
         <div class="row">
           <div class="col-lg-4">
             <div class="left-content">
@@ -34,7 +34,7 @@
                 </form>
               </div>
               <div class="action-btn-main">
-                <span  class="icon" @click="plusIcon">
+                <a href="#" class="icon" data-toggle="dropdown" aria-expanded="false">
                   <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.21655 19.0676C1.21655 5.68036 5.68024 1.21667 19.0674 1.21667C32.4546 1.21667 36.9183 5.68036 36.9183 19.0676C36.9183 32.4547 32.4546 36.9184 19.0674 36.9184C5.68024 36.9184 1.21655 32.4547 1.21655 19.0676Z"
@@ -44,8 +44,8 @@
                     <path d="M25.6268 19.0675H12.5078" stroke="white" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"></path>
                   </svg>
-                </span>
-                <div class="dropdown-menu dropdown-menu-right control" style="" v-show="showMenu">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right control" style="">
                   <div class="modal-control-01">
                     <div class="modal-content">
                       <!-- modal content start -->
@@ -60,9 +60,9 @@
                                   stroke="white" stroke-width="1.6"></path>
                               </svg>
                             </span>
-                            <router-link to="/new_order" class="text">
+                            <a href="creat-new-order.html" class="text">
                               Create Order
-                            </router-link>
+                            </a>
                           </li>
                           <li class="list-item" onclick="addProdOnePopOpn()">
                             <span class="icon">
@@ -77,7 +77,7 @@
                               Add Product
                             </span>
                           </li>
-                          <li class="list-item" @click="customerPopOpn">
+                          <li class="list-item" onclick="customerPopOpn()">
                             <span class="icon">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -89,38 +89,38 @@
                                   fill="white"></path>
                               </svg>
 
-                            </span>
-                            <span class="text">
-                              Add Shop
-                            </span>
-                          </li>
-                          <li class="list-item" onclick="supplyPopOpn()">
-                            <span class="icon">
-                              <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15.84 16.1931C15.84 19.4891 11.32 19.8701 7.921 19.8701L7.67776 19.8699C5.51221 19.8646 0 19.7279 0 16.1731C0 12.9444 4.33835 12.5129 7.71148 12.4966L8.16423 12.4963C10.3296 12.5016 15.84 12.6383 15.84 16.1931ZM7.921 13.9961C3.66 13.9961 1.5 14.7281 1.5 16.1731C1.5 17.6311 3.66 18.3701 7.921 18.3701C12.181 18.3701 14.34 17.6381 14.34 16.1931C14.34 14.7351 12.181 13.9961 7.921 13.9961ZM7.921 -0.000305176C10.849 -0.000305176 13.23 2.38169 13.23 5.30969C13.23 8.23769 10.849 10.6187 7.921 10.6187H7.889C4.967 10.6097 2.6 8.2267 2.60997 5.30669C2.60997 2.3817 4.992 -0.000305176 7.921 -0.000305176ZM7.921 1.42769C5.78 1.42769 4.03798 3.16869 4.03798 5.30969C4.031 7.4437 5.76 9.18369 7.892 9.1917L7.921 9.90569V9.1917C10.061 9.1917 11.802 7.44969 11.802 5.30969C11.802 3.16869 10.061 1.42769 7.921 1.42769Z"
-                                  fill="white"></path>
-                              </svg>
-                            </span>
-                            <span class="text">
-                              Add Supplier
-                            </span>
-                          </li>
-                          <li class="list-item" onclick="discPopOpn()">
-                            <span class="icon">
-                              <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M17.451 -0.000289917C19.683 -0.000289917 21.499 1.79771 21.499 4.00671L21.5 6.60071C21.5 6.79871 21.421 6.99071 21.28 7.13071C21.14 7.27171 20.949 7.35071 20.75 7.35071C19.963 7.35071 19.323 7.97871 19.323 8.75071C19.323 9.52271 19.963 10.1507 20.75 10.1507C21.164 10.1507 21.5 10.4867 21.5 10.9007V13.4927C21.5 15.7017 19.684 17.4997 17.452 17.4997H4.048C1.816 17.4997 0 15.7017 0 13.4927V10.9007C0 10.4867 0.336 10.1507 0.75 10.1507C1.537 10.1507 2.177 9.52271 2.177 8.75071C2.177 8.00071 1.563 7.43471 0.75 7.43471C0.551 7.43471 0.36 7.35571 0.22 7.21471C0.079 7.07471 0 6.88271 0 6.68471L0.001 4.00671C0.001 1.79771 1.817 -0.000289917 4.049 -0.000289917H17.451ZM17.451 1.49971H13.349L13.3496 3.42091C13.3496 3.83491 13.0136 4.17091 12.5996 4.17091C12.1856 4.17091 11.8496 3.83491 11.8496 3.42091L11.849 1.49971H4.049C2.644 1.49971 1.501 2.62471 1.501 4.00671L1.5 6.02471C2.767 6.33571 3.677 7.42171 3.677 8.75071C3.677 10.0927 2.751 11.2247 1.5 11.5537V13.4927C1.5 14.8747 2.643 15.9997 4.048 15.9997H11.849L11.8496 14.5112C11.8496 14.0962 12.1856 13.7612 12.5996 13.7612C13.0136 13.7612 13.3496 14.0962 13.3496 14.5112L13.349 15.9997H17.452C18.857 15.9997 20 14.8747 20 13.4927V11.5537C18.749 11.2247 17.823 10.0927 17.823 8.75071C17.823 7.40771 18.748 6.27671 20 5.94771L19.999 4.00671C19.999 2.62471 18.856 1.49971 17.451 1.49971ZM12.5996 5.50421C13.0136 5.50421 13.3496 5.84021 13.3496 6.25421V11.0752C13.3496 11.4892 13.0136 11.8252 12.5996 11.8252C12.1856 11.8252 11.8496 11.4892 11.8496 11.0752V6.25421C11.8496 5.84021 12.1856 5.50421 12.5996 5.50421Z"
-                                  fill="white"></path>
-                              </svg>
-                            </span>
-                            <span class="text">
-                              Set Discount
-                            </span>
-                          </li>
-                        </ul>
+                              </span>
+                              <span class="text">
+                                Add Shop
+                              </span>
+                            </li>
+                            <li class="list-item" onclick="supplyPopOpn()">
+                              <span class="icon">
+                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.84 16.1931C15.84 19.4891 11.32 19.8701 7.921 19.8701L7.67776 19.8699C5.51221 19.8646 0 19.7279 0 16.1731C0 12.9444 4.33835 12.5129 7.71148 12.4966L8.16423 12.4963C10.3296 12.5016 15.84 12.6383 15.84 16.1931ZM7.921 13.9961C3.66 13.9961 1.5 14.7281 1.5 16.1731C1.5 17.6311 3.66 18.3701 7.921 18.3701C12.181 18.3701 14.34 17.6381 14.34 16.1931C14.34 14.7351 12.181 13.9961 7.921 13.9961ZM7.921 -0.000305176C10.849 -0.000305176 13.23 2.38169 13.23 5.30969C13.23 8.23769 10.849 10.6187 7.921 10.6187H7.889C4.967 10.6097 2.6 8.2267 2.60997 5.30669C2.60997 2.3817 4.992 -0.000305176 7.921 -0.000305176ZM7.921 1.42769C5.78 1.42769 4.03798 3.16869 4.03798 5.30969C4.031 7.4437 5.76 9.18369 7.892 9.1917L7.921 9.90569V9.1917C10.061 9.1917 11.802 7.44969 11.802 5.30969C11.802 3.16869 10.061 1.42769 7.921 1.42769Z"
+                                    fill="white"></path>
+                                </svg>
+                              </span>
+                              <span class="text">
+                                Add Supplier
+                              </span>
+                            </li>
+                            <li class="list-item" onclick="discPopOpn()">
+                              <span class="icon">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.451 -0.000289917C19.683 -0.000289917 21.499 1.79771 21.499 4.00671L21.5 6.60071C21.5 6.79871 21.421 6.99071 21.28 7.13071C21.14 7.27171 20.949 7.35071 20.75 7.35071C19.963 7.35071 19.323 7.97871 19.323 8.75071C19.323 9.52271 19.963 10.1507 20.75 10.1507C21.164 10.1507 21.5 10.4867 21.5 10.9007V13.4927C21.5 15.7017 19.684 17.4997 17.452 17.4997H4.048C1.816 17.4997 0 15.7017 0 13.4927V10.9007C0 10.4867 0.336 10.1507 0.75 10.1507C1.537 10.1507 2.177 9.52271 2.177 8.75071C2.177 8.00071 1.563 7.43471 0.75 7.43471C0.551 7.43471 0.36 7.35571 0.22 7.21471C0.079 7.07471 0 6.88271 0 6.68471L0.001 4.00671C0.001 1.79771 1.817 -0.000289917 4.049 -0.000289917H17.451ZM17.451 1.49971H13.349L13.3496 3.42091C13.3496 3.83491 13.0136 4.17091 12.5996 4.17091C12.1856 4.17091 11.8496 3.83491 11.8496 3.42091L11.849 1.49971H4.049C2.644 1.49971 1.501 2.62471 1.501 4.00671L1.5 6.02471C2.767 6.33571 3.677 7.42171 3.677 8.75071C3.677 10.0927 2.751 11.2247 1.5 11.5537V13.4927C1.5 14.8747 2.643 15.9997 4.048 15.9997H11.849L11.8496 14.5112C11.8496 14.0962 12.1856 13.7612 12.5996 13.7612C13.0136 13.7612 13.3496 14.0962 13.3496 14.5112L13.349 15.9997H17.452C18.857 15.9997 20 14.8747 20 13.4927V11.5537C18.749 11.2247 17.823 10.0927 17.823 8.75071C17.823 7.40771 18.748 6.27671 20 5.94771L19.999 4.00671C19.999 2.62471 18.856 1.49971 17.451 1.49971ZM12.5996 5.50421C13.0136 5.50421 13.3496 5.84021 13.3496 6.25421V11.0752C13.3496 11.4892 13.0136 11.8252 12.5996 11.8252C12.1856 11.8252 11.8496 11.4892 11.8496 11.0752V6.25421C11.8496 5.84021 12.1856 5.50421 12.5996 5.50421Z"
+                                    fill="white"></path>
+                                </svg>
+                              </span>
+                              <span class="text">
+                                Set Discount
+                              </span>
+                            </li>
+                          </ul>
 
                       </div>
                       <!-- modal content end -->
@@ -132,38 +132,33 @@
           </div>
         </div>
       </div>
-        <!-- top bar area end -->
+                    <!-- top bar area end -->
 
-        <!-- main body content start -->
-        <div class="main-body-content-area-wrapper">
-          <order-com></order-com>
+                    <!-- main body content start -->
+                    <div class="main-body-content-area-wrapper">
+                        <order-com></order-com>
+                    </div>
+                    <!-- main body content end -->
+
+                    <!-- all big popup wrapper start -->
+                    <AllPopup/>
+                    <!-- all big popup wrapper end -->
+
+                </div>
+                <!-- main body area start -->
         </div>
-        <!-- main body content end -->
-
-        <!-- all big popup wrapper start -->
-        <AllPopup />
-        <!-- all big popup wrapper end -->
-
-      </div>
-      <!-- main body area start -->
     </div>
-  </div>
 </template>
 <script>
-  import Sidebar from '@/components/nav_top/Sidebar.vue';
-  import Topbar from '@/components/nav_top/Topbar.vue';
-  import AllPopup from '@/components/all_popup/AllPopup.vue';
-  import OrderCom from '@/components/pages_component/OrderCom.vue';
-  export default {
+import Sidebar from '@/components/nav_top/Sidebar.vue';
+import Topbar from '@/components/nav_top/Topbar.vue';
+import AllPopup from '@/components/all_popup/AllPopup.vue';
+import OrderCom from '@/components/pages_component/OrderCom.vue';
+    export default {
     name: "Order",
     data() {
-      return {};
+        return {};
     },
-    components: {
-      Sidebar,
-      Topbar,
-      AllPopup,
-      OrderCom
-    }
-  }
+    components: { Sidebar, Topbar, AllPopup, OrderCom }
+}
 </script>

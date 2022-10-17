@@ -180,6 +180,7 @@
     },
     plusIcon() {
       this.showMenu = !this.showMenu;
+      
     }
   }
 
