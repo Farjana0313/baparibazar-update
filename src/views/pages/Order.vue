@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <div class="container-scroller">
-            <!-- sidebar area start -->
-            <Sidebar/>
-            <!-- sidebar area end -->
+  <div>
+    <div class="container-scroller">
+      <!-- sidebar area start -->
+      <Sidebar />
+      <!-- sidebar area end -->
 
-                <!-- main body area start -->
-                <div class="container-fluid main-body">
-                    <!-- top bar area start -->
-                    <div class="topbar-area-wrapper">
+      <!-- main body area start -->
+      <div class="container-fluid main-body">
+        <!-- top bar area start -->
+        <div class="topbar-area-wrapper">
         <div class="row">
           <div class="col-lg-4">
             <div class="left-content">
@@ -34,7 +34,7 @@
                 </form>
               </div>
               <div class="action-btn-main">
-                <a href="#" class="icon" data-toggle="dropdown" aria-expanded="false">
+                <span  class="icon" @click="plusIcon">
                   <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.21655 19.0676C1.21655 5.68036 5.68024 1.21667 19.0674 1.21667C32.4546 1.21667 36.9183 5.68036 36.9183 19.0676C36.9183 32.4547 32.4546 36.9184 19.0674 36.9184C5.68024 36.9184 1.21655 32.4547 1.21655 19.0676Z"
@@ -44,8 +44,8 @@
                     <path d="M25.6268 19.0675H12.5078" stroke="white" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"></path>
                   </svg>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right control" style="">
+                </span>
+                <div class="dropdown-menu dropdown-menu-right control" style="" v-show="showMenu">
                   <div class="modal-control-01">
                     <div class="modal-content">
                       <!-- modal content start -->
@@ -60,9 +60,9 @@
                                   stroke="white" stroke-width="1.6"></path>
                               </svg>
                             </span>
-                            <a href="creat-new-order.html" class="text">
+                            <router-link to="/new_order" class="text">
                               Create Order
-                            </a>
+                            </router-link>
                           </li>
                           <li class="list-item" onclick="addProdOnePopOpn()">
                             <span class="icon">
@@ -77,7 +77,7 @@
                               Add Product
                             </span>
                           </li>
-                          <li class="list-item" onclick="customerPopOpn()">
+                          <li class="list-item" @click="customerPopOpn">
                             <span class="icon">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -132,33 +132,38 @@
           </div>
         </div>
       </div>
-                    <!-- top bar area end -->
+        <!-- top bar area end -->
 
-                    <!-- main body content start -->
-                    <div class="main-body-content-area-wrapper">
-                        <order-com></order-com>
-                    </div>
-                    <!-- main body content end -->
-
-                    <!-- all big popup wrapper start -->
-                    <AllPopup/>
-                    <!-- all big popup wrapper end -->
-
-                </div>
-                <!-- main body area start -->
+        <!-- main body content start -->
+        <div class="main-body-content-area-wrapper">
+          <order-com></order-com>
         </div>
+        <!-- main body content end -->
+
+        <!-- all big popup wrapper start -->
+        <AllPopup />
+        <!-- all big popup wrapper end -->
+
+      </div>
+      <!-- main body area start -->
     </div>
+  </div>
 </template>
 <script>
-import Sidebar from '@/components/nav_top/Sidebar.vue';
-import Topbar from '@/components/nav_top/Topbar.vue';
-import AllPopup from '@/components/all_popup/AllPopup.vue';
-import OrderCom from '@/components/pages_component/OrderCom.vue';
-    export default {
+  import Sidebar from '@/components/nav_top/Sidebar.vue';
+  import Topbar from '@/components/nav_top/Topbar.vue';
+  import AllPopup from '@/components/all_popup/AllPopup.vue';
+  import OrderCom from '@/components/pages_component/OrderCom.vue';
+  export default {
     name: "Order",
     data() {
-        return {};
+      return {};
     },
-    components: { Sidebar, Topbar, AllPopup, OrderCom }
-}
+    components: {
+      Sidebar,
+      Topbar,
+      AllPopup,
+      OrderCom
+    }
+  }
 </script>

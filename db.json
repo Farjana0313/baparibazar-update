@@ -5,11 +5,6 @@
       "email": "admin@admin.com",
       "password": "1234",
       "id": 1
-    },
-    {"name":"zakaria",
-      "email": "zakaria@devsstream.com",
-      "password": "032022",
-      "id": 2
     }
   ]
 }
