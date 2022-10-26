@@ -141,13 +141,13 @@ function addSbCatgPopCls() {
 }
 
 // add product
-function addProdOnePopOpn() {
-    document.getElementById("add_product_one").style.width = "610px";
-}
+// function addProdOnePopOpn() {
+//     document.getElementById("add_product_one").style.width = "610px";
+// }
 
-function addProdOnePopCls() {
-    document.getElementById("add_product_one").style.width = "0";
-}
+// function addProdOnePopCls() {
+//     document.getElementById("add_product_one").style.width = "0";
+// }
 
 // add  product two
 function addProdTwoPopOpn() {
@@ -159,13 +159,13 @@ function addProdTwoPopCls() {
 }
 
 // discount
-function discPopOpn() {
-    document.getElementById("discount_pop").style.width = "610px";
-}
+// function discPopOpn() {
+//     document.getElementById("discount_pop").style.width = "610px";
+// }
 
-function discPopCls() {
-    document.getElementById("discount_pop").style.width = "0";
-}
+// function discPopCls() {
+//     document.getElementById("discount_pop").style.width = "0";
+// }
 
 // service charge
 function servCsPopOpn() {
@@ -195,22 +195,22 @@ function curEmplyPopCls() {
 }
 
 // New employ
-function customerPopOpn() {
-    document.getElementById("shop_keeper").style.width = "610px";
-}
+// function customerPopOpn() {
+//     document.getElementById("shop_keeper").style.width = "610px";
+// }
 
-function customerPopCls() {
-    document.getElementById("shop_keeper").style.width = "0";
-}
+// function customerPopCls() {
+//     document.getElementById("shop_keeper").style.width = "0";
+// }
 
 // New employ
-function supplyPopOpn() {
-    document.getElementById("supplyers").style.width = "610px";
-}
+// function supplyPopOpn() {
+//     document.getElementById("supplyers").style.width = "610px";
+// }
 
-function supplyPopCls() {
-    document.getElementById("supplyers").style.width = "0";
-}
+// function supplyPopCls() {
+//     document.getElementById("supplyers").style.width = "0";
+// }
 
 // add category details view (new)
 function addCatgDetViewPopOpn() {

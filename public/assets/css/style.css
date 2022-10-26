@@ -14759,6 +14759,14 @@ a.text-dark:focus {
   width: 300px;
 }
 
+select {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+  width: 300px;
+}
+
 .topbar-area-wrapper .right-content form input::-webkit-input-placeholder {
   color: #BDBDBD;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="new-order-add-area-wrapper">
-      
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8">
@@ -24,7 +24,14 @@
 
                   <tbody>
                     <tr>
-                      <td class="catg">চাল</td>
+                      <td class="catg">
+
+                        <select class="custom-select border">
+                          <option value="1">চাল</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </td>
                       <td class="sub-catg">নাজিরশাইল</td>
                       <td class="product">মোজ্জামেল -২৫ কেজি বস্তা </td>
                       <td class="quantity">
@@ -156,7 +163,7 @@
                         <input type="text" placeholder="ক্যাটাগরি">
                       </td>
                       <td class="sub-catg">
-                        <select id="" name="" form="">
+                        <select id="" name="" form="" class="custom-select border">
                           <option value="" disabled="" selected="" hidden="" class="hide">সাবক্যাটাগরি
                           </option>
                           <option value="volvo">cat 01</option>
@@ -164,8 +171,9 @@
                           <option value="volvo">cat 03</option>
                         </select>
                       </td>
-                      <td class="product"><select id="" name="" form="">
-                          <option value="" disabled="" selected="" hidden="" class="hide">পণ্য
+                      <td class="product">
+                        <select id="" name="" form="" class="custom-select border">
+                          <option>পণ্য
                           </option>
                           <option value="volvo">cat 01</option>
                           <option value="volvo">cat 02</option>
