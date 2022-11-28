@@ -65,7 +65,7 @@
                     <thead>
                       <tr>
                         <th class="sl-no">
-                          <form action="/action_page.php">
+                          <form>
                             <label for="">
                               <input type="checkbox" id="" name="" value="">
                               <span class="custom-checkbox"></span>

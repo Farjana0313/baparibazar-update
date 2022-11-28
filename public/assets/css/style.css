@@ -15152,7 +15152,7 @@ select {
   font-weight: 700;
 }
 
-.table-area-wrapper.order-table-content table .sl-no {
+/* .table-area-wrapper.order-table-content table .sl-no {
   width: 85px;
 }
 
@@ -15216,7 +15216,7 @@ select {
 .table-area-wrapper.order-table-content table .action {
   width: 150px;
   text-align: center;
-}
+} */
 
 .table-area-wrapper.order-table-content table tbody .pending-item {
   background-color: rgba(207, 216, 214, 0.2);
