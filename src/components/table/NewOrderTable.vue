@@ -515,14 +515,14 @@
     /* padding: 15px 0; */
   }
 
-  /* .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
+  .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
   .v-data-table>.v-data-table__wrapper>table>tbody>tr>th,
   .v-data-table>.v-data-table__wrapper>table>thead>tr>td,
   .v-data-table>.v-data-table__wrapper>table>thead>tr>th,
   .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td,
   .v-data-table>.v-data-table__wrapper>table>tfoot>tr>th {
     padding: 10px 16px;
-  } */
+  }
   .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th{
     width:132px;
   }
