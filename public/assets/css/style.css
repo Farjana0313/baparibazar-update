@@ -2796,10 +2796,10 @@ button {
   border-radius: 0;
 }
 
-/* button:focus {
+button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
-} */
+}
 
 input,
 button,
@@ -6415,7 +6415,7 @@ input[type=button].btn-block {
   top: 100%;
   left: 0;
   z-index: 1000;
-  /* display: none; */
+  display: none;
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -10385,9 +10385,9 @@ button.bg-dark:focus {
   background-color: transparent !important;
 }
 
-/* .border {
+.border {
   border: 1px solid #2c2e33 !important;
-} */
+}
 
 .border-top {
   border-top: 1px solid #2c2e33 !important;
@@ -14759,14 +14759,6 @@ a.text-dark:focus {
   width: 300px;
 }
 
-select {
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  margin-bottom: 0;
-  width: 300px;
-}
-
 .topbar-area-wrapper .right-content form input::-webkit-input-placeholder {
   color: #BDBDBD;
 }
@@ -15152,7 +15144,7 @@ select {
   font-weight: 700;
 }
 
-/* .table-area-wrapper.order-table-content table .sl-no {
+.table-area-wrapper.order-table-content table .sl-no {
   width: 85px;
 }
 
@@ -15216,7 +15208,7 @@ select {
 .table-area-wrapper.order-table-content table .action {
   width: 150px;
   text-align: center;
-} */
+}
 
 .table-area-wrapper.order-table-content table tbody .pending-item {
   background-color: rgba(207, 216, 214, 0.2);
@@ -19496,7 +19488,7 @@ p {
   display: inline-block;
   border: 1px solid #262626;
   padding: 6px 23px;
-  color: #fff !important;
+  color: #fff;
   border-radius: 9px;
   text-transform: capitalize;
 }
@@ -19671,11 +19663,11 @@ p {
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tr .catg {
-  width: 200px;
+  width: 150px;
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tr .sub-catg {
-  width: 180px;
+  width: 150px;
   text-align: center;
 }
 
@@ -19685,17 +19677,17 @@ p {
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tr .quantity {
-  /* width: 150px; */
+  width: 150px;
   text-align: center;
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tr .price {
-  /* width: 150px; */
+  width: 150px;
   text-align: center;
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tr .action {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table thead tr {
@@ -19733,9 +19725,6 @@ p {
   width: 100%;
   height: 30px;
   border: none;
-  color: #BDBDBD;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .new-order-add-area-wrapper .add-order-inner .order-add-table table tbody tr td select:focus {
@@ -20789,7 +20778,7 @@ p {
 }
 
 .sidebar .nav .nav-item.active .menu-icon svg path {
-  fill: black!important;
+  fill: black;
 }
 
 .sidebar .nav .nav-item.nav-profile .nav-link {
@@ -21589,13 +21578,13 @@ input:focus {
 
 /* new */
 
-/* table {
+table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
   width: 100%;
   table-layout: fixed;
-} */
+}
 
 table caption {
   /* font-size: 1.5em; */

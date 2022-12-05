@@ -20,7 +20,7 @@
           </div>
           <div class="col-lg-8">
             <div class="right-content">
-              <div class="search-form">
+              <!-- <div class="search-form">
                 <form>
                   <input type="text" class="form-control" placeholder="Search here">
                   <button type="submit" class="form-btn-icon">
@@ -31,7 +31,7 @@
                     </svg>
                   </button>
                 </form>
-              </div>
+              </div> -->
               <plus-icon></plus-icon>
             </div>
           </div>

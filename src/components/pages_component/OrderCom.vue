@@ -11,7 +11,6 @@
                   <v-tab v-for="item in items" :key="item">
                     {{ item }}
                   </v-tab>
-
                 </v-tabs>
               </div>
             </div>
@@ -48,14 +47,14 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12">
           <!-- tab content area start -->
           <!--                    <div class="tab-content" id="myTabContent">-->
 
           <v-tabs-items v-model="tab">
             <v-tab-item>
               <div class="tab-pane">
-<new-order-table></new-order-table>
+                <new-order-table></new-order-table>
               </div>
             </v-tab-item>
             <v-tab-item>
@@ -67,36 +66,20 @@
                         <th class="sl-no">
                           <form>
                             <label for="">
-                              <input type="checkbox" id="" name="" value="">
+                              <input type="checkbox" id="" name="" value="" />
                               <span class="custom-checkbox"></span>
                             </label>
                           </form>
                           <span class="no-only">#</span>
                         </th>
-                        <th class="order-id">
-                          Order id
-                        </th>
-                        <th class="date-and-time">
-                          Delivery Date
-                        </th>
-                        <th class="customer">
-                          Customer
-                        </th>
-                        <th class="area">
-                          Area
-                        </th>
-                        <th class="item">
-                          No. of Items
-                        </th>
-                        <th class="amount">
-                          Payment
-                        </th>
-                        <th class="status">
-                          Status
-                        </th>
-                        <th class="action">
-                          Action
-                        </th>
+                        <th class="order-id">Order id</th>
+                        <th class="date-and-time">Delivery Date</th>
+                        <th class="customer">Customer</th>
+                        <th class="area">Area</th>
+                        <th class="item">No. of Items</th>
+                        <th class="amount">Payment</th>
+                        <th class="status">Status</th>
+                        <th class="action">Action</th>
                       </tr>
                     </thead>
 
@@ -104,7 +87,7 @@
                       <tr class="successull-order">
                         <td class="sl-no">
                           <form action="/action_page.php">
-                            <input type="checkbox" id="" name="" value="">
+                            <input type="checkbox" id="" name="" value="" />
                           </form>
                           <span class="no-only">১</span>
                         </td>
@@ -116,9 +99,9 @@
                         </td>
                         <td class="customer">
                           <span class="cus-name">মের্সাস হালিমা স্টোর</span>
-                          <span class="address font-small">আচরি মার্কেট , সড়ক ১২,
-                            সেক্টর ৩,
-                            উত্তরা, ঢাকা </span>
+                          <span class="address font-small"
+                            >আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+                          </span>
                           <span class="mob-no font-small">০১৫৬ ৯৩ ৬৯ ৫৩</span>
                         </td>
                         <td class="area">
@@ -135,21 +118,53 @@
                         </td>
                         <td class="action">
                           <span class="single-action-item">
-                            <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
-                              <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                            <a
+                              href="#"
+                              class="action-btn"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 13 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
                                   d="M0.615479 6.69234C0.615479 2.42342 2.03886 1.00003 6.30779 1.00003C10.5767 1.00003 12.0001 2.42342 12.0001 6.69234C12.0001 10.9613 10.5767 12.3846 6.30779 12.3846C2.03886 12.3846 0.615479 10.9613 0.615479 6.69234Z"
-                                  stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.76538 6.69229H8.77092" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M6.30444 6.69229H6.30998" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3.84351 6.69229H3.84904" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
+                                  stroke="#828282"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M8.76538 6.69229H8.77092"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M6.30444 6.69229H6.30998"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.84351 6.69229H3.84904"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
                               </svg>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right control">
+                            <div
+                              class="dropdown-menu dropdown-menu-right control"
+                            >
                               <div class="modal-control-02">
                                 <div class="modal-content">
                                   <!-- modal content start -->
@@ -157,45 +172,84 @@
                                     <ul class="list">
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="10"
+                                            viewBox="0 0 12 10"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M7.58217 5.02607C7.58217 5.89907 6.87417 6.60707 6.00117 6.60707C5.12817 6.60707 4.42017 5.89907 4.42017 5.02607C4.42017 4.15257 5.12817 3.44507 6.00117 3.44507C6.87417 3.44507 7.58217 4.15257 7.58217 5.02607Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.37524 5.02606C1.37524 6.66606 3.44624 8.67706 6.00124 8.67706C8.55575 8.67706 10.6272 6.66756 10.6272 5.02606C10.6272 3.38456 8.55575 1.37506 6.00124 1.37506C3.44624 1.37506 1.37524 3.38606 1.37524 5.02606Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
                                           </svg>
                                         </span>
-                                        <span class="text" onclick="orderPopOpn()">
+                                        <span
+                                          class="text"
+                                          onclick="orderPopOpn()"
+                                        >
                                           View Details
                                         </span>
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="10" height="9" viewBox="0 0 10 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="10"
+                                            height="9"
+                                            viewBox="0 0 10 9"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M4.8124 0.0146264C4.97876 0.0146264 5.11377 0.149639 5.11377 0.315994C5.11377 0.482349 4.97876 0.617362 4.8124 0.617362H3.30998C2.27167 0.617362 1.60103 1.32859 1.60103 2.42918V5.76995C1.60103 6.87054 2.27167 7.58177 3.30998 7.58177H6.85567C7.89399 7.58177 8.56503 6.87054 8.56503 5.76995V4.1514C8.56503 3.98505 8.70005 3.85003 8.8664 3.85003C9.03276 3.85003 9.16777 3.98505 9.16777 4.1514V5.76995C9.16777 7.2141 8.23835 8.18451 6.85567 8.18451H3.30998C1.92731 8.18451 0.998291 7.2141 0.998291 5.76995V2.42918C0.998291 0.985031 1.92731 0.0146264 3.30998 0.0146264H4.8124ZM8.31213 0.367669L8.80114 0.856688C9.03943 1.09457 9.17042 1.4108 9.17002 1.74753C9.17002 2.08426 9.03902 2.40009 8.80114 2.63757L5.78385 5.65486C5.56245 5.87627 5.26751 5.99842 4.95408 5.99842H3.44885C3.36768 5.99842 3.28973 5.96547 3.23307 5.90721C3.17642 5.84935 3.14548 5.77099 3.14749 5.68942L3.18526 4.17093C3.19289 3.86876 3.31464 3.58467 3.52841 3.3705H3.52882L6.53164 0.367669C7.02267 -0.122556 7.8211 -0.122556 8.31213 0.367669ZM6.28428 1.46706L3.95475 3.79683C3.85068 3.9009 3.79161 4.03913 3.78799 4.1858L3.75786 5.39569H4.95408C5.10678 5.39569 5.24983 5.33662 5.35792 5.22853L7.70151 2.88429L6.28428 1.46706ZM6.95758 0.794004L6.71021 1.04072L8.12745 2.45836L8.37521 2.21124C8.49897 2.08747 8.56728 1.92273 8.56728 1.74753C8.56728 1.57193 8.49897 1.40678 8.37521 1.28302L7.88619 0.794004C7.63023 0.538846 7.21394 0.538846 6.95758 0.794004Z"
-                                              fill="#828282" />
+                                              fill="#828282"
+                                            />
                                           </svg>
                                         </span>
-                                        <span class="text">
-                                          Order Edit
-                                        </span>
+                                        <span class="text"> Order Edit </span>
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354" stroke="#828282"
-                                              stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.375 6.00006C1.375 9.46856 2.5315 10.6251 6 10.6251C9.4685 10.6251 10.625 9.46856 10.625 6.00006C10.625 2.53156 9.4685 1.37506 6 1.37506C2.5315 1.37506 1.375 2.53156 1.375 6.00006Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
                                           </svg>
                                         </span>
                                         <span class="text">
@@ -203,7 +257,6 @@
                                         </span>
                                       </li>
                                     </ul>
-
                                   </div>
                                   <!-- modal content end -->
                                 </div>
@@ -215,7 +268,7 @@
                       <tr class="successull-order">
                         <td class="sl-no">
                           <form action="/action_page.php">
-                            <input type="checkbox" id="" name="" value="">
+                            <input type="checkbox" id="" name="" value="" />
                           </form>
                           <span class="no-only">১</span>
                         </td>
@@ -227,9 +280,9 @@
                         </td>
                         <td class="customer">
                           <span class="cus-name">মের্সাস হালিমা স্টোর</span>
-                          <span class="address font-small">আচরি মার্কেট , সড়ক ১২,
-                            সেক্টর ৩,
-                            উত্তরা, ঢাকা </span>
+                          <span class="address font-small"
+                            >আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+                          </span>
                           <span class="mob-no font-small">০১৫৬ ৯৩ ৬৯ ৫৩</span>
                         </td>
                         <td class="area">
@@ -246,21 +299,53 @@
                         </td>
                         <td class="action">
                           <span class="single-action-item">
-                            <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
-                              <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                            <a
+                              href="#"
+                              class="action-btn"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 13 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
                                   d="M0.615479 6.69234C0.615479 2.42342 2.03886 1.00003 6.30779 1.00003C10.5767 1.00003 12.0001 2.42342 12.0001 6.69234C12.0001 10.9613 10.5767 12.3846 6.30779 12.3846C2.03886 12.3846 0.615479 10.9613 0.615479 6.69234Z"
-                                  stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.76538 6.69229H8.77092" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M6.30444 6.69229H6.30998" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3.84351 6.69229H3.84904" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
+                                  stroke="#828282"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M8.76538 6.69229H8.77092"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M6.30444 6.69229H6.30998"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.84351 6.69229H3.84904"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
                               </svg>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right control">
+                            <div
+                              class="dropdown-menu dropdown-menu-right control"
+                            >
                               <div class="modal-control-02">
                                 <div class="modal-content">
                                   <!-- modal content start -->
@@ -268,45 +353,84 @@
                                     <ul class="list">
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="10"
+                                            viewBox="0 0 12 10"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M7.58217 5.02607C7.58217 5.89907 6.87417 6.60707 6.00117 6.60707C5.12817 6.60707 4.42017 5.89907 4.42017 5.02607C4.42017 4.15257 5.12817 3.44507 6.00117 3.44507C6.87417 3.44507 7.58217 4.15257 7.58217 5.02607Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.37524 5.02606C1.37524 6.66606 3.44624 8.67706 6.00124 8.67706C8.55575 8.67706 10.6272 6.66756 10.6272 5.02606C10.6272 3.38456 8.55575 1.37506 6.00124 1.37506C3.44624 1.37506 1.37524 3.38606 1.37524 5.02606Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
                                           </svg>
                                         </span>
-                                        <span class="text" onclick="orderPopOpn()">
+                                        <span
+                                          class="text"
+                                          onclick="orderPopOpn()"
+                                        >
                                           View Details
                                         </span>
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="10" height="9" viewBox="0 0 10 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="10"
+                                            height="9"
+                                            viewBox="0 0 10 9"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M4.8124 0.0146264C4.97876 0.0146264 5.11377 0.149639 5.11377 0.315994C5.11377 0.482349 4.97876 0.617362 4.8124 0.617362H3.30998C2.27167 0.617362 1.60103 1.32859 1.60103 2.42918V5.76995C1.60103 6.87054 2.27167 7.58177 3.30998 7.58177H6.85567C7.89399 7.58177 8.56503 6.87054 8.56503 5.76995V4.1514C8.56503 3.98505 8.70005 3.85003 8.8664 3.85003C9.03276 3.85003 9.16777 3.98505 9.16777 4.1514V5.76995C9.16777 7.2141 8.23835 8.18451 6.85567 8.18451H3.30998C1.92731 8.18451 0.998291 7.2141 0.998291 5.76995V2.42918C0.998291 0.985031 1.92731 0.0146264 3.30998 0.0146264H4.8124ZM8.31213 0.367669L8.80114 0.856688C9.03943 1.09457 9.17042 1.4108 9.17002 1.74753C9.17002 2.08426 9.03902 2.40009 8.80114 2.63757L5.78385 5.65486C5.56245 5.87627 5.26751 5.99842 4.95408 5.99842H3.44885C3.36768 5.99842 3.28973 5.96547 3.23307 5.90721C3.17642 5.84935 3.14548 5.77099 3.14749 5.68942L3.18526 4.17093C3.19289 3.86876 3.31464 3.58467 3.52841 3.3705H3.52882L6.53164 0.367669C7.02267 -0.122556 7.8211 -0.122556 8.31213 0.367669ZM6.28428 1.46706L3.95475 3.79683C3.85068 3.9009 3.79161 4.03913 3.78799 4.1858L3.75786 5.39569H4.95408C5.10678 5.39569 5.24983 5.33662 5.35792 5.22853L7.70151 2.88429L6.28428 1.46706ZM6.95758 0.794004L6.71021 1.04072L8.12745 2.45836L8.37521 2.21124C8.49897 2.08747 8.56728 1.92273 8.56728 1.74753C8.56728 1.57193 8.49897 1.40678 8.37521 1.28302L7.88619 0.794004C7.63023 0.538846 7.21394 0.538846 6.95758 0.794004Z"
-                                              fill="#828282" />
+                                              fill="#828282"
+                                            />
                                           </svg>
                                         </span>
-                                        <span class="text">
-                                          Order Edit
-                                        </span>
+                                        <span class="text"> Order Edit </span>
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354" stroke="#828282"
-                                              stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.375 6.00006C1.375 9.46856 2.5315 10.6251 6 10.6251C9.4685 10.6251 10.625 9.46856 10.625 6.00006C10.625 2.53156 9.4685 1.37506 6 1.37506C2.5315 1.37506 1.375 2.53156 1.375 6.00006Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round" />
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
                                           </svg>
                                         </span>
                                         <span class="text">
@@ -314,7 +438,6 @@
                                         </span>
                                       </li>
                                     </ul>
-
                                   </div>
                                   <!-- modal content end -->
                                 </div>
@@ -331,17 +454,35 @@
                     </div>
                     <div class="right-content">
                       <a href="#" class="page-pagination disable">
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
+                        <svg
+                          width="5"
+                          height="8"
+                          viewBox="0 0 5 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
                             d="M3.90811 7.33334C3.73344 7.33334 3.55944 7.26534 3.42878 7.13L0.853441 4.46334C0.601441 4.20134 0.604775 3.786 0.862108 3.52867L3.52878 0.862004C3.78878 0.601337 4.21078 0.601337 4.47144 0.862004C4.73144 1.12267 4.73144 1.544 4.47144 1.80467L2.26811 4.008L4.38744 6.20334C4.64344 6.46867 4.63611 6.89067 4.37144 7.146C4.24144 7.27134 4.07478 7.33334 3.90811 7.33334Z"
-                            fill="#E0E0E0" />
+                            fill="#E0E0E0"
+                          />
                         </svg>
                       </a>
                       <a href="#" class="page-pagination">
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
+                        <svg
+                          width="5"
+                          height="8"
+                          viewBox="0 0 5 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
                             d="M1.00009 7.33333C0.829419 7.33333 0.658752 7.26799 0.528752 7.13799C0.268085 6.87733 0.268085 6.45599 0.528752 6.19533L2.73209 3.99199L0.612085 1.79666C0.356752 1.53133 0.364085 1.10933 0.628752 0.853993C0.894085 0.59866 1.31609 0.605993 1.57142 0.869993L4.14609 3.53666C4.39875 3.79866 4.39542 4.21399 4.13809 4.47133L1.47142 7.13799C1.34142 7.26799 1.17075 7.33333 1.00009 7.33333Z"
-                            fill="#E0E0E0" />
+                            fill="#E0E0E0"
+                          />
                         </svg>
                       </a>
                     </div>
@@ -358,36 +499,20 @@
                         <th class="sl-no">
                           <form action="/action_page.php">
                             <label for="">
-                              <input type="checkbox" id="" name="" value="">
+                              <input type="checkbox" id="" name="" value="" />
                               <span class="custom-checkbox"></span>
                             </label>
                           </form>
                           <span class="no-only">#</span>
                         </th>
-                        <th class="order-id">
-                          Order id
-                        </th>
-                        <th class="date-and-time">
-                          Canceled Date
-                        </th>
-                        <th class="customer">
-                          Customer
-                        </th>
-                        <th class="area">
-                          Area
-                        </th>
-                        <th class="item">
-                          No. of Items
-                        </th>
-                        <th class="amount">
-                          Payment
-                        </th>
-                        <th class="status">
-                          Status
-                        </th>
-                        <th class="action">
-                          Action
-                        </th>
+                        <th class="order-id">Order id</th>
+                        <th class="date-and-time">Canceled Date</th>
+                        <th class="customer">Customer</th>
+                        <th class="area">Area</th>
+                        <th class="item">No. of Items</th>
+                        <th class="amount">Payment</th>
+                        <th class="status">Status</th>
+                        <th class="action">Action</th>
                       </tr>
                     </thead>
 
@@ -395,7 +520,7 @@
                       <tr class="canceled-order">
                         <td class="sl-no">
                           <form action="/action_page.php">
-                            <input type="checkbox" id="" name="" value="">
+                            <input type="checkbox" id="" name="" value="" />
                           </form>
                           <span class="no-only">১</span>
                         </td>
@@ -407,9 +532,9 @@
                         </td>
                         <td class="customer">
                           <span class="cus-name">মের্সাস হালিমা স্টোর</span>
-                          <span class="address font-small">আচরি মার্কেট , সড়ক ১২,
-                            সেক্টর ৩,
-                            উত্তরা, ঢাকা </span>
+                          <span class="address font-small"
+                            >আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+                          </span>
                           <span class="mob-no font-small">০১৫৬ ৯৩ ৬৯ ৫৩</span>
                         </td>
                         <td class="area">
@@ -426,21 +551,53 @@
                         </td>
                         <td class="action">
                           <span class="single-action-item">
-                            <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
-                              <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                            <a
+                              href="#"
+                              class="action-btn"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 13 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
                                   d="M0.615479 6.69234C0.615479 2.42342 2.03886 1.00003 6.30779 1.00003C10.5767 1.00003 12.0001 2.42342 12.0001 6.69234C12.0001 10.9613 10.5767 12.3846 6.30779 12.3846C2.03886 12.3846 0.615479 10.9613 0.615479 6.69234Z"
-                                  stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.76538 6.69229H8.77092" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M6.30444 6.69229H6.30998" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3.84351 6.69229H3.84904" stroke="#828282" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round" />
+                                  stroke="#828282"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M8.76538 6.69229H8.77092"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M6.30444 6.69229H6.30998"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.84351 6.69229H3.84904"
+                                  stroke="#828282"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
                               </svg>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right control">
+                            <div
+                              class="dropdown-menu dropdown-menu-right control"
+                            >
                               <div class="modal-control-02">
                                 <div class="modal-content">
                                   <!-- modal content start -->
@@ -448,32 +605,53 @@
                                     <ul class="list">
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="10"
+                                            viewBox="0 0 12 10"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M7.58217 5.02607C7.58217 5.89907 6.87417 6.60707 6.00117 6.60707C5.12817 6.60707 4.42017 5.89907 4.42017 5.02607C4.42017 4.15257 5.12817 3.44507 6.00117 3.44507C6.87417 3.44507 7.58217 4.15257 7.58217 5.02607Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round">
-                                            </path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            ></path>
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.37524 5.02606C1.37524 6.66606 3.44624 8.67706 6.00124 8.67706C8.55575 8.67706 10.6272 6.66756 10.6272 5.02606C10.6272 3.38456 8.55575 1.37506 6.00124 1.37506C3.44624 1.37506 1.37524 3.38606 1.37524 5.02606Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round">
-                                            </path>
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            ></path>
                                           </svg>
                                         </span>
-                                        <span class="text" onclick="orderPopOpn()">
+                                        <span
+                                          class="text"
+                                          onclick="orderPopOpn()"
+                                        >
                                           View Details
                                         </span>
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="7" height="8" viewBox="0 0 7 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                          <svg
+                                            width="7"
+                                            height="8"
+                                            viewBox="0 0 7 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
                                             <path
                                               d="M0 0H1V1.2785C1.54063 0.854247 2.1942 0.598538 2.8792 0.543263C3.56419 0.487989 4.2503 0.635594 4.85197 0.967672C5.45363 1.29975 5.94422 1.8016 6.26256 2.41065C6.58089 3.0197 6.71289 3.70898 6.64208 4.39255C6.57127 5.07611 6.3008 5.72371 5.86438 6.25457C5.42797 6.78543 4.84493 7.17608 4.18797 7.37778C3.53101 7.57948 2.82922 7.58332 2.17009 7.38881C1.51097 7.1943 0.923694 6.81006 0.4815 6.284L1.2915 5.692C1.61249 6.05339 2.03136 6.31397 2.4974 6.44221C2.96344 6.57044 3.45665 6.56083 3.91734 6.41453C4.37803 6.26822 4.78642 5.99151 5.09308 5.61789C5.39974 5.24427 5.59152 4.78975 5.64519 4.30939C5.69886 3.82902 5.61212 3.34339 5.39548 2.9113C5.17884 2.47921 4.84159 2.11918 4.42455 1.87482C4.00752 1.63045 3.52858 1.51222 3.04573 1.53443C2.56289 1.55665 2.09683 1.71837 1.704 2H3V3H0V0Z"
-                                              fill="#828282">
-                                            </path>
+                                              fill="#828282"
+                                            ></path>
                                           </svg>
                                         </span>
                                         <span class="text">
@@ -482,16 +660,29 @@
                                       </li>
                                       <li class="list-item">
                                         <span class="icon">
-                                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354" stroke="#828282"
-                                              stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
-                                            </path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                          <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M4.22021 6.00004L5.40722 7.18654L7.78022 4.81354"
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            ></path>
+                                            <path
+                                              fill-rule="evenodd"
+                                              clip-rule="evenodd"
                                               d="M1.375 6.00006C1.375 9.46856 2.5315 10.6251 6 10.6251C9.4685 10.6251 10.625 9.46856 10.625 6.00006C10.625 2.53156 9.4685 1.37506 6 1.37506C2.5315 1.37506 1.375 2.53156 1.375 6.00006Z"
-                                              stroke="#828282" stroke-width="0.8" stroke-linecap="round"
-                                              stroke-linejoin="round">
-                                            </path>
+                                              stroke="#828282"
+                                              stroke-width="0.8"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            ></path>
                                           </svg>
                                         </span>
                                         <span class="text">
@@ -499,7 +690,6 @@
                                         </span>
                                       </li>
                                     </ul>
-
                                   </div>
                                   <!-- modal content end -->
                                 </div>
@@ -516,17 +706,35 @@
                     </div>
                     <div class="right-content">
                       <a href="#" class="page-pagination disable">
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
+                        <svg
+                          width="5"
+                          height="8"
+                          viewBox="0 0 5 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
                             d="M3.90811 7.33334C3.73344 7.33334 3.55944 7.26534 3.42878 7.13L0.853441 4.46334C0.601441 4.20134 0.604775 3.786 0.862108 3.52867L3.52878 0.862004C3.78878 0.601337 4.21078 0.601337 4.47144 0.862004C4.73144 1.12267 4.73144 1.544 4.47144 1.80467L2.26811 4.008L4.38744 6.20334C4.64344 6.46867 4.63611 6.89067 4.37144 7.146C4.24144 7.27134 4.07478 7.33334 3.90811 7.33334Z"
-                            fill="#E0E0E0" />
+                            fill="#E0E0E0"
+                          />
                         </svg>
                       </a>
                       <a href="#" class="page-pagination">
-                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
+                        <svg
+                          width="5"
+                          height="8"
+                          viewBox="0 0 5 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
                             d="M1.00009 7.33333C0.829419 7.33333 0.658752 7.26799 0.528752 7.13799C0.268085 6.87733 0.268085 6.45599 0.528752 6.19533L2.73209 3.99199L0.612085 1.79666C0.356752 1.53133 0.364085 1.10933 0.628752 0.853993C0.894085 0.59866 1.31609 0.605993 1.57142 0.869993L4.14609 3.53666C4.39875 3.79866 4.39542 4.21399 4.13809 4.47133L1.47142 7.13799C1.34142 7.26799 1.17075 7.33333 1.00009 7.33333Z"
-                            fill="#E0E0E0" />
+                            fill="#E0E0E0"
+                          />
                         </svg>
                       </a>
                     </div>
@@ -536,8 +744,6 @@
             </v-tab-item>
           </v-tabs-items>
 
-
-
           <!--                    </div>-->
           <!-- tab content area end -->
         </div>
@@ -546,72 +752,65 @@
   </div>
 </template>
 <script>
-import NewOrderTable from '../table/NewOrderTable.vue';
-  export default {
+import NewOrderTable from "../table/NewOrderTable.vue";
+export default {
   components: { NewOrderTable },
-    name: 'OrderCom',
+  name: "OrderCom",
 
-    data() {
-      return {
-        tab: null,
-        items: [
-          'new orders', 'successful orders', 'cancel orders'
-        ],
+  data() {
+    return {
+      tab: null,
+      items: ["new orders", "successful orders", "cancel orders"],
+    };
+  },
 
-      };
-    },
+  mounted() {},
 
-    mounted() {
-
-    },
-
-    methods: {
-
-    },
-  };
+  methods: {},
+};
 </script>
 <style>
-  .v-tab {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 12px 36px !important;
-    gap: 10px !important;
-    height: 39px !important;
-    background: #F2F2F2 !important;
-    border-radius: 7px !important;
-    margin-right: 10px;
-    text-transform: capitalize !important;
-  }
+.v-tab {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 12px 36px !important;
+  gap: 10px !important;
+  height: 39px !important;
+  background: #f2f2f2 !important;
+  border-radius: 7px !important;
+  margin-right: 10px;
+  text-transform: capitalize !important;
+}
 
-  .tab_active {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 12px 36px !important;
-    background: #262626 !important;
-    border-radius: 7px !important;
-    /*font-family: 'Mulish' !important;*/
-    font-style: normal !important;
-    font-size: 16px !important;
-    line-height: 100% !important;
-    color: #FFFFFF !important;
-  }
+.tab_active {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 12px 36px !important;
+  background: #262626 !important;
+  border-radius: 7px !important;
+  /*font-family: 'Mulish' !important;*/
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  color: #ffffff !important;
+}
 
-  .v-tabs-slider {
-    background: transparent !important;
-  }
+.v-tabs-slider {
+  background: transparent !important;
+}
 
-  .theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active),
-  .theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon,
-  .theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-btn,
-  .theme--light.v-tabs>.v-tabs-bar .v-tab--disabled {
-    color: #828282 !important;
-  }
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active),
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon,
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn,
+.theme--light.v-tabs > .v-tabs-bar .v-tab--disabled {
+  color: #828282 !important;
+}
 
-  .add-product .btn-common {
-    color: #fff;
-  }
+.add-product .btn-common {
+  color: #fff;
+}
 </style>

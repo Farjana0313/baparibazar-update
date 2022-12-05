@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="nav-innner-wrap">
@@ -169,9 +169,9 @@
             </div>
         </nav>
     </div>
-</template> -->
+</template>
 
-<template>
+<!-- <template>
   <div class="sidebar sidebar-offcanvas" id="sidebar">
     <v-navigation-drawer v-model="drawer" stateless>
       <router-link to="/"
@@ -182,7 +182,12 @@
           height="80"
       /></router-link>
       <v-list>
-        <v-list-item link v-model="active" no-action :to="{name:'Dashboard'}">
+        <v-list-item
+          link
+          v-model="active"
+          no-action
+          :to="{ name: 'Dashboard' }"
+        >
           <template>
             <v-list-item-icon>
               <span class="menu-icon">
@@ -384,6 +389,9 @@
               </span>
             </v-list-item-icon>
             <v-list-item-title>Settings</v-list-item-title>
+            <v-list-item-icon>
+              <v-icon>mdi-magnify</v-icon>
+            </v-list-item-icon>
           </template>
 
           <template>
@@ -436,7 +444,7 @@
       </div>
     </v-navigation-drawer>
   </div>
-</template>
+</template> -->
 
 <script>
 export default {
@@ -468,5 +476,7 @@ export default {
 
 .v-list .v-list-item--active svg path {
   fill: black;
+}
+.v-icon.v-icon {
 }
 </style>
