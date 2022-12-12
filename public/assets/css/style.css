@@ -15095,7 +15095,7 @@ a.text-dark:focus {
 }
 
 .table-area-wrapper table {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .table-area-wrapper table thead tr {
@@ -21582,7 +21582,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
   table-layout: fixed;
 }
 

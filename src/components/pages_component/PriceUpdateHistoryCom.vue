@@ -60,6 +60,19 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+.v-pagination__item {
+    background: transparent;
+    border-radius: 0 !important;
+    font-size: 0.9rem !important;
+    height: 25px;
+    margin: 0.3rem;
+    min-width: 27px !important;
+    padding: 0 5px;
+    text-decoration: none;
+    transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+    width: auto;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+}
 </style>

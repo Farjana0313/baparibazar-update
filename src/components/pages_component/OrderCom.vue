@@ -140,4 +140,32 @@ export default {
 .add-product .btn-common {
   color: #fff;
 }
+.theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(2) {
+    width: 85px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(3) {
+    width: 150px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(4) {
+    width: 200px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(5) {
+    width: 300px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(6) {
+    width: 180px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(7) {
+    width: 180px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(8) {
+    width: 150px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(9) {
+    width: 150px;
+  }
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(10) {
+    width: 150px;
+    text-align: center !important;
+  }
 </style>
