@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="nav-innner-wrap">
@@ -169,9 +169,9 @@
             </div>
         </nav>
     </div>
-</template> -->
+</template>
 
-<template>
+<!-- <template>
   <div class="sidebar sidebar-offcanvas" id="sidebar">
     <v-navigation-drawer v-model="drawer" stateless>
       <router-link to="/"
@@ -444,7 +444,7 @@
       </div>
     </v-navigation-drawer>
   </div>
-</template>
+</template> -->
 
 <script>
 export default {

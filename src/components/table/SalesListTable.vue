@@ -65,9 +65,9 @@
         </template>
         <template v-slot:item.orderId>
           <td class="order-id">
-              <span class="order-id-only">বপ১২৫৬৫৯৮৪৩</span> <br>
-              <span class="date-only">১৮/১০/২০২১</span>
-            </td>
+            <span class="order-id-only">বপ১২৫৬৫৯৮৪৩</span> <br>
+            <span class="date-only">১৮/১০/২০২১</span>
+          </td>
         </template>
         <template v-slot:item.noOfItem>
           <td class="item">
@@ -250,8 +250,7 @@
             value: "action",
           },
         ],
-        desserts: [
-          {
+        desserts: [{
             name: "১",
             customer: "",
             orderId: "",
@@ -275,7 +274,7 @@
             payment_mood: "	১২,৪৮৯.০০",
             payment: "	",
           },
-          
+
         ],
       };
     },
@@ -318,33 +317,38 @@
     padding: 10px 16px;
   }
 
-  /* .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th {
-    width: 139px;
-  } */
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(2) {
     width: 85px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(3) {
     width: 300px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(4) {
     width: 200px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(5) {
     width: 150px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(6) {
     width: 180px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(7) {
     width: 180px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(8) {
     width: 150px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(9) {
     width: 150px;
   }
+
   .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(10) {
     width: 150px;
     text-align: center !important;

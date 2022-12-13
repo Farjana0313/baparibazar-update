@@ -6,7 +6,7 @@
           <div class="search_input">
             <div class="search-form">
               <form>
-                <input type="text" class="form-control" placeholder="Search here" v-model="search" />
+                <input type="text" class="form-control" placeholder="Search here" v-model="search">
                 <button type="submit" class="form-btn-icon">
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -21,6 +21,24 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-6">
           <div class="text-end">
+            <span class="short-icon mr-4 mb-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.1599 6.29988L12.4899 0.899878C11.7599 0.799878 10.9399 0.749878 10.0399 0.749878C3.7499 0.749878 1.6499 3.06988 1.6499 9.99988C1.6499 16.9399 3.7499 19.2499 10.0399 19.2499C16.3399 19.2499 18.4399 16.9399 18.4399 9.99988C18.4399 8.57988 18.3499 7.34988 18.1599 6.29988Z"
+                  fill="#E0E0E0" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                  fill="#E0E0E0" />
+                <path d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                  stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.6604 14.0172V7.9762" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622"
+                  fill="#E0E0E0" />
+                <path d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622" stroke="#828282" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
             <button class="short-icon" @click="toggleOrder">
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,47 +50,69 @@
         </div>
       </div>
     </div>
+    <div class="table-area-wrapper settings-table-content">
 
-    <div class="table-area-wrapper order-table-content">
       <v-data-table v-model="selected" :headers="headers" :items="desserts" :page.sync="page"
-        :single-select="singleSelect" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc" item-key="name" show-select
+        :single-select="singleSelect" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc" item-key="sl_no" show-select
         :search="search" class="elevation-1" hide-default-footer>
+
         <template v-slot:footer> </template>
-        <template v-slot:item.categories>
+        <template v-slot:item.name>
           <td class="name">
-            <span class="total-wrap">
-              <span class="img-box">
-                <img src="assets/images/product-category/chal/01.png" alt="" />
-              </span>
-              <span class="product-name">চাল</span>
+            <span class="employ-name">
+              Sabbir Rahman
             </span>
           </td>
         </template>
-        <template v-slot:item.subcatory>
-          <td class="sub-category">
-            <span class="sub-category-name">নাজিরশাইল</span>
+        <template v-slot:item.user_id>
+          <td class="user-id">
+            Sabbir
           </td>
         </template>
-        <template v-slot:item.productName>
-          <td class="product-brand">
-            <span class="product-brand-name">মোজ্জামেল</span>
+        <template v-slot:item.password>
+          <td class="password">
+            <span class="password-wrap">
+              <span class="password-only">***********</span>
+              <span class="icon">
+                <svg width="14" height="13" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.58192 5.02607C7.58192 5.89907 6.87392 6.60707 6.00092 6.60707C5.12792 6.60707 4.41992 5.89907 4.41992 5.02607C4.41992 4.15257 5.12792 3.44507 6.00092 3.44507C6.87392 3.44507 7.58192 4.15257 7.58192 5.02607Z"
+                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.375 5.026C1.375 6.666 3.446 8.677 6.001 8.677C8.5555 8.677 10.627 6.6675 10.627 5.026C10.627 3.3845 8.5555 1.375 6.001 1.375C3.446 1.375 1.375 3.386 1.375 5.026Z"
+                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </span>
           </td>
         </template>
-        <template v-slot:item.weight>
-          <td class="weight">
-            <span class="weight-only">২৫</span>
-          </td>
-        </template>
-        <template v-slot:item.lastUpdate>
-          <td class="date-and-time">
-            <span class="last-update">১৮/১০/২০২১</span>
+        <template v-slot:item.role>
+          <td class="role">
+            <span class="dropdown">
+              <span class="icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.375 6C1.375 9.4685 2.5315 10.625 6 10.625C9.4685 10.625 10.625 9.4685 10.625 6C10.625 2.5315 9.4685 1.375 6 1.375C2.5315 1.375 1.375 2.5315 1.375 6Z"
+                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M4.26367 5.27905C4.26367 5.27905 5.45967 7.02205 5.99967 7.02205C6.53967 7.02205 7.73467 5.27905 7.73467 5.27905"
+                    stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <select>
+                <option value="volvo">Sales Manager</option>
+                <option value="saab">Sales Manager 2</option>
+                <option value="opel">Sales Manager 3</option>
+                <option value="audi">Sales Manager 4</option>
+              </select>
+            </span>
           </td>
         </template>
         <template v-slot:item.action>
           <td class="action">
             <span class="checkboxes-and-radios">
-              <input type="checkbox" name="checkbox-cats[]" id="product-over-chal-1" value="1" checked="" />
-              <label for="product-over-chal-1"></label>
+              <input type="checkbox" name="checkbox-cats[]" id="role-1" value="1" checked="">
+              <label for="role-1"></label>
             </span>
             <span class="single-action-item">
               <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -119,7 +159,9 @@
                                 fill="#828282" />
                             </svg>
                           </span>
-                          <span class="text"> Order Edit </span>
+                          <span class="text">
+                            Order Edit
+                          </span>
                         </li>
                         <li class="list-item">
                           <span class="icon">
@@ -132,9 +174,12 @@
                                 stroke="#828282" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </span>
-                          <span class="text"> Mark as Completed </span>
+                          <span class="text">
+                            Mark as Completed
+                          </span>
                         </li>
                       </ul>
+
                     </div>
                     <!-- modal content end -->
                   </div>
@@ -149,6 +194,7 @@
               <span class="page-count">1 of 23</span>
             </div>
             <div class="right-content">
+
               <v-pagination v-model="page" :length="pageCount"></v-pagination>
 
               <!-- <a href="#" class="page-pagination disable" >
@@ -170,6 +216,7 @@
         </template>
       </v-data-table>
     </div>
+
   </div>
 </template>
 
@@ -181,8 +228,8 @@
       return {
         page: 1,
         pageCount: 0,
-        search: "",
-        sortBy: "name",
+        search: '',
+        sortBy: 'sl_no',
         sortDesc: false,
         singleSelect: false,
         selected: [],
@@ -190,27 +237,23 @@
             text: "#",
             align: "start",
             sortable: false,
+            value: "sl_no",
+          },
+          {
+            text: "Name",
             value: "name",
           },
           {
-            text: "Categories",
-            value: "categories",
+            text: "User Id",
+            value: "user_id",
           },
           {
-            text: "Subcatory",
-            value: "subcatory",
+            text: "Password",
+            value: "password",
           },
           {
-            text: "Product Name",
-            value: "productName",
-          },
-          {
-            text: "weight",
-            value: "weight",
-          },
-          {
-            text: "Last update",
-            value: "lastUpdate",
+            text: "Role",
+            value: "role",
           },
           {
             text: "Action",
@@ -218,20 +261,26 @@
           },
         ],
         desserts: [{
-            name: "১",
-            categories: "",
-            subcatory: "",
-            productName: "",
-            weight: "",
-            lastUpdate: "",
+            sl_no: "১",
+            name: "বপ১২৫৬৫৯৮৪৩",
+            user_id: `	১৮/১০/২০২১
+                          ৫ মিনিট আগে`,
+            password: `মের্সাস হালিমা স্টোর
+  আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+  ০১৫৬ ৯৩ ৬৯ ৫৩`,
+            role: "উত্তরা",
+            action: ''
           },
           {
-            name: "২",
-            categories: "",
-            subcatory: "",
-            productName: "",
-            weight: "",
-            lastUpdate: "",
+            sl_no: "২",
+            name: "বপ১২৫৬৫৯৮৪৩",
+            user_id: `	১৮/১০/২০২১
+                          ৫ মিনিট আগে`,
+            password: `মের্সাস হালিমা স্টোর
+  আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+  ০১৫৬ ৯৩ ৬৯ ৫৩`,
+            role: "উত্তরা",
+            action: ''
           },
         ],
       };
@@ -244,9 +293,9 @@
         this.sortDesc = !this.sortDesc;
       },
       getColor(customer) {
-        if (customer > 400) return "red";
-        else if (customer > 200) return "orange";
-        else return "green";
+        if (customer > 400) return 'red'
+        else if (customer > 200) return 'orange'
+        else return 'green'
       },
     },
   };
@@ -260,6 +309,24 @@
     color: #262626;
     text-transform: initial;
     /* padding: 15px 0; */
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(2) {
+    width: 65px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(3) {
+    width: 200px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(6) {
+    width: 150px;
+    text-align: center !important;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(7) {
+
+    text-align: center !important;
   }
 
   .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
@@ -282,7 +349,7 @@
   }
 
   download-invoice-btn {
-    margin-right: 12px;
+    margin-right: 12px
   }
 
   button:focus {

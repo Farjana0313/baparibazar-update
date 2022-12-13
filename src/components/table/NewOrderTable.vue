@@ -523,9 +523,6 @@
   .v-data-table>.v-data-table__wrapper>table>tfoot>tr>th {
     padding: 10px 16px;
   }
-  .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th{
-    width:132px;
-  }
   .short-icon {
     width: 41px;
     height: 41px;

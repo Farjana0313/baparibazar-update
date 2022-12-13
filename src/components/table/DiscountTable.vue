@@ -21,6 +21,24 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-6">
           <div class="text-end">
+            <span class="short-icon mr-4 mb-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.1599 6.29988L12.4899 0.899878C11.7599 0.799878 10.9399 0.749878 10.0399 0.749878C3.7499 0.749878 1.6499 3.06988 1.6499 9.99988C1.6499 16.9399 3.7499 19.2499 10.0399 19.2499C16.3399 19.2499 18.4399 16.9399 18.4399 9.99988C18.4399 8.57988 18.3499 7.34988 18.1599 6.29988Z"
+                  fill="#E0E0E0" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                  fill="#E0E0E0" />
+                <path d="M11.9343 0.832581V3.49358C11.9343 5.35158 13.4403 6.85658 15.2983 6.85658H18.2493"
+                  stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.6604 14.0172V7.9762" stroke="#828282" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622"
+                  fill="#E0E0E0" />
+                <path d="M7.3147 11.6622L9.6597 14.0172L12.0047 11.6622" stroke="#828282" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
             <button class="short-icon" @click="toggleOrder">
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,47 +50,41 @@
         </div>
       </div>
     </div>
-
-    <div class="table-area-wrapper order-table-content">
+    <div class="table-area-wrapper settings-table-content">
       <v-data-table v-model="selected" :headers="headers" :items="desserts" :page.sync="page"
-        :single-select="singleSelect" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc" item-key="name" show-select
+        :single-select="singleSelect" :sort-by.sync="sortBy" :sort-desc.sync="sortDesc" item-key="sl_no" show-select
         :search="search" class="elevation-1" hide-default-footer>
         <template v-slot:footer> </template>
-        <template v-slot:item.categories>
+        <template v-slot:item.discount_code>
           <td class="name">
-            <span class="total-wrap">
-              <span class="img-box">
-                <img src="assets/images/product-category/chal/01.png" alt="" />
-              </span>
-              <span class="product-name">চাল</span>
-            </span>
+            <span class="name-code">FO1101</span>
           </td>
         </template>
-        <template v-slot:item.subcatory>
-          <td class="sub-category">
-            <span class="sub-category-name">নাজিরশাইল</span>
+        <template v-slot:item.amount_percentage>
+          <td class="amount-percentage">
+            <span class="percent-only">1%</span>
           </td>
         </template>
-        <template v-slot:item.productName>
-          <td class="product-brand">
-            <span class="product-brand-name">মোজ্জামেল</span>
-          </td>
-        </template>
-        <template v-slot:item.weight>
-          <td class="weight">
-            <span class="weight-only">২৫</span>
-          </td>
-        </template>
-        <template v-slot:item.lastUpdate>
+        <template v-slot:item.active_date>
           <td class="date-and-time">
-            <span class="last-update">১৮/১০/২০২১</span>
+            <span class="active-date">১৮/১০/২০২১</span>
+          </td>
+        </template>
+        <template v-slot:item.deactive_date>
+          <td class="date-and-time">
+            <span class="active-date">১৮/১০/২০২১</span>
+          </td>
+        </template>
+        <template v-slot:item.status>
+          <td class="status">
+            <span class="status-only">active</span>
           </td>
         </template>
         <template v-slot:item.action>
           <td class="action">
             <span class="checkboxes-and-radios">
-              <input type="checkbox" name="checkbox-cats[]" id="product-over-chal-1" value="1" checked="" />
-              <label for="product-over-chal-1"></label>
+              <input type="checkbox" name="checkbox-cats[]" id="ser-c-3" value="1" checked="" />
+              <label for="ser-c-3"></label>
             </span>
             <span class="single-action-item">
               <a href="#" class="action-btn" data-toggle="dropdown" aria-expanded="false">
@@ -182,7 +194,7 @@
         page: 1,
         pageCount: 0,
         search: "",
-        sortBy: "name",
+        sortBy: "sl_no",
         sortDesc: false,
         singleSelect: false,
         selected: [],
@@ -190,27 +202,27 @@
             text: "#",
             align: "start",
             sortable: false,
-            value: "name",
+            value: "sl_no",
           },
           {
-            text: "Categories",
-            value: "categories",
+            text: "Discount Code",
+            value: "discount_code",
           },
           {
-            text: "Subcatory",
-            value: "subcatory",
+            text: "Amount/Percentage",
+            value: "amount_percentage",
           },
           {
-            text: "Product Name",
-            value: "productName",
+            text: "Active Date",
+            value: "active_date",
           },
           {
-            text: "weight",
-            value: "weight",
+            text: "Deactive Date",
+            value: "deactive_date",
           },
           {
-            text: "Last update",
-            value: "lastUpdate",
+            text: "Status",
+            value: "status",
           },
           {
             text: "Action",
@@ -218,20 +230,28 @@
           },
         ],
         desserts: [{
-            name: "১",
-            categories: "",
-            subcatory: "",
-            productName: "",
-            weight: "",
-            lastUpdate: "",
+            sl_no: "১",
+            discount_code: "বপ১২৫৬৫৯৮৪৩",
+            service_charge_name: `	১৮/১০/২০২১
+                          ৫ মিনিট আগে`,
+            active_date: `মের্সাস হালিমা স্টোর
+  আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+  ০১৫৬ ৯৩ ৬৯ ৫৩`,
+            deactive_date: "উত্তরা",
+            status: "উত্তরা",
+            action: "",
           },
           {
-            name: "২",
-            categories: "",
-            subcatory: "",
-            productName: "",
-            weight: "",
-            lastUpdate: "",
+            sl_no: "২",
+            discount_code: "বপ১২৫৬৫৯৮৪৩",
+            service_charge_name: `	১৮/১০/২০২১
+                          ৫ মিনিট আগে`,
+            active_date: `মের্সাস হালিমা স্টোর
+  আচরি মার্কেট , সড়ক ১২, সেক্টর ৩, উত্তরা, ঢাকা
+  ০১৫৬ ৯৩ ৬৯ ৫৩`,
+            deactive_date: "উত্তরা",
+            status: "উত্তরা",
+            action: "",
           },
         ],
       };
@@ -260,6 +280,31 @@
     color: #262626;
     text-transform: initial;
     /* padding: 15px 0; */
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(2) {
+    width: 65px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(3) {
+    width: 200px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(4) {
+    width: 200px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(6) {
+    width: 150px;
+    text-align: center !important;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(7) {
+    width: 150px;
+  }
+
+  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th:nth-child(8) {
+    text-align: center !important;
   }
 
   .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
