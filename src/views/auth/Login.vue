@@ -18,7 +18,7 @@
                                         id="exampleInputPassword1" placeholder="Password">
                                 </div>
 
-                                <router-link to="/"><button class="btn login-btn">Log in</button></router-link>
+                                <router-link to="/dashboard"><button class="btn login-btn">Log in</button></router-link>
                                 <!-- <button class="btn login-btn" @click.prevent="logIn">Log in</button> -->
                             </form>
                         </div>

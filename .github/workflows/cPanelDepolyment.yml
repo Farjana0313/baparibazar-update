@@ -1,0 +1,33 @@
+name: Publish Website to Web Hosting V2
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  web-deploy:
+    name: Deploy Application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@main
+      - name: Create Node Environment
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install Packages and Build Application
+        run: |
+          npm install -g @vue/cli yarn
+          yarn install
+          yarn build
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        env:
+          REPO: self
+          BRANCH: main
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
